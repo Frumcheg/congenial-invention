@@ -1,0 +1,34 @@
+.c-instagram-feed {
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 73px;
+}
+
+.c-instagram-feed__blot {
+  width: 347px;
+  height: 172px;
+  background: url(../img/blot2.png) 0 0 no-repeat;
+  position: absolute;
+  z-index: -1;
+  top: -68px;
+  left: -30px;
+}
+
+.c-instagram-feed__header {
+  font-family: 'AmericaXIX', serif;
+  font-size: 45px;
+}
+
+.c-instagram-feed__items {
+  margin-top: 33px;
+  margin-bottom: 44px;
+}
+
+.c-instagram-feed__item {
+  display: block;
+  padding-bottom: 100%;
+}
+
+.c-instagram-feed__link {
+  width: 173px;
+}

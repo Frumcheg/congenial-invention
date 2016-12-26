@@ -4,6 +4,9 @@
   bottom: 0;
   height: $footerHeight;
   background-color: $colorBlack;
+  background-image: url(../img/footerbg.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .c-header {
