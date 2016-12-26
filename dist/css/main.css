@@ -735,17 +735,6 @@ body {
   font-size: 45px;
 }
 
-.c-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 440px;
-  background-color: #050505;
-  background-image: url(../img/footerbg.png);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
 .c-header {
   background-color: #050505;
   padding-top: 46px;
@@ -810,6 +799,56 @@ body {
   color: #d1d1d1;
   font-size: 18px;
   padding-right: 29px;
+}
+
+.c-socials {
+  padding-bottom: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-socials__item {
+  display: block;
+  border: solid 2px #ffffff;
+  width: 56px;
+  height: 56px;
+}
+
+.c-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 440px;
+  background-color: #050505;
+  background-image: url(../img/footerbg.png);
+  background-position: 0 0;
+  color: #ffffff;
+  padding-top: 68px;
+}
+
+.c-footer__to-us {
+  font-family: 'AmericaXIX', serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.c-footer__org-name {
+  font-family: 'AmericaXIX', serif;
+  font-size: 20px;
+  padding-bottom: 21px;
+}
+
+.c-footer__addr {
+  padding-bottom: 34px;
+}
+
+.c-footer__autors {
+  color: #9a9a9a;
+  margin-top: 34px;
 }
 
 .c-next-performance {
@@ -1313,47 +1352,4 @@ body {
 
 .muted {
   color: #7b7b7b;
-}
-
-.c-footer {
-  color: #ffffff;
-  padding-top: 68px;
-}
-
-.c-footer__to-us {
-  font-family: 'AmericaXIX', serif;
-  font-size: 20px;
-  padding-bottom: 20px;
-}
-
-.c-footer__org-name {
-  font-family: 'AmericaXIX', serif;
-  font-size: 20px;
-  padding-bottom: 21px;
-}
-
-.c-footer__addr {
-  padding-bottom: 34px;
-}
-
-.c-socials {
-  padding-bottom: 37px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.c-socials__item {
-  display: block;
-  border: solid 2px #ffffff;
-  width: 56px;
-  height: 56px;
-}
-
-.c-footer__autors {
-  color: #9a9a9a;
-  margin-top: 34px;
 }
