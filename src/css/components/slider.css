@@ -1,0 +1,153 @@
+.c-slider {
+  position: relative;
+}
+
+.c-slider-arrow_left {
+  transform: rotateY(180deg);
+  left: 34px;
+}
+
+.c-slider-arrow_right {
+  right: 34px;
+}
+
+@mixin desktop {
+  .c-slider-img.slick-slide {
+    height: 475px;
+  }
+
+  .c-slider {
+    max-height: 475px;
+  }
+}
+
+@mixin big-desktop {
+  .c-slider-img.slick-slide {
+    height: 600px;
+  }
+
+  .c-slider {
+    max-height: 600px;
+  }
+
+  .c-slider-arrow_left {
+    left: calc(100% / 2 - 900px);
+  }
+
+  .c-slider-arrow_right {
+    right: calc(100% / 2 - 900px);
+  }
+}
+
+.c-slider-img {
+
+}
+
+.c-slider-img__el {
+  height: 100%;
+}
+
+.c-slider-arrow {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 70px;
+  cursor: pointer;
+}
+
+
+.c-slider-dots {
+  margin: 0;
+  padding: 0;
+
+  & > li {
+    display: inline-block;
+  }
+
+  li + li {
+    margin-left: 19px;
+  }
+
+  button {
+    display: block;
+    padding: 0;
+    width: 14px;
+    height: 14px;
+    background-color: #dfdfdf;
+    border: solid 2px #dfdfdf;
+    border-radius: 50%;
+    font-size: 0;
+    cursor: pointer;
+  }
+
+  .slick-active button {
+    background-color: #e74e0f;
+    border-color: #dfdfdf;
+  }
+}
+
+.c-slider-dots__wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 22px;
+  text-align: center;
+}
+
+.slick-slider.c-slider-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  color: #afafaf;
+  max-width: 1100px;
+  width: 100%;
+  padding: 248px 50px 0 50px;
+  transition: padding-top 0.5s ease, background-color 0.5s ease;
+
+  .slick-slide {
+    outline-width: 0;
+  }
+
+  &:hover {
+    padding-top: 100px;
+    background-color: #0d0d0e;
+
+    .c-slider-info__desc {
+      max-height: 150px;
+      opacity: 1;
+      transition: max-height 0.3s ease, opacity 1s ease;
+    }
+  }
+}
+
+.c-slider-info__link {
+  font-family: 'AmericaXIX', serif;
+  font-size: 45px;
+  color: #ffffff;
+  outline-width: 0;
+}
+
+.c-slider-info__author {
+  margin-top: 27px;
+  margin-bottom: 9px;
+  color: #ffffff;
+}
+
+.c-slider-info__desc {
+  max-width: 590px;
+  margin-top: 34px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.c-slider-info.is-hover {
+  width: 1126px;
+  background-color: #0d0d0e;
+  height: 100%;
+  bottom: 0;
+}

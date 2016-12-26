@@ -1,0 +1,47 @@
+.c-news {
+  padding-bottom: 69px;
+}
+
+.c-news__chairs {
+  background: url(../img/chairs.png) -48px -145px no-repeat;
+  position: absolute;
+  width: 511px;
+  height: 778px;
+  right: 0;
+}
+
+.c-news__item {
+  max-width: 720px;
+  overflow: hidden;
+  margin-top: 38px;
+}
+
+.c-news__date {
+  float: left;
+  font-size: 20px;
+  color: #7b7b7b;
+  font-family: 'AmericaXIX', serif;
+  margin-top: -1px;
+}
+
+.c-news__info {
+  margin-left: 140px;
+}
+
+.c-news__name {
+  font-size: 20px;
+  color: #0f0e15;
+  text-decoration: none;
+}
+
+.c-news__desc {
+  color: #555555;
+  line-height: 1.25;
+  padding-top: 15px;
+}
+
+.c-news__button-link {
+  width: 187px;
+  padding: 15px 0 13px;
+  margin-top: 43px;
+}

@@ -1,0 +1,53 @@
+.o-container-wide {
+  width: 100%;
+}
+
+.o-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+@mixin desktop {
+  .o-container {
+    max-width: 1130px;
+  }
+}
+
+@mixin big-desktop {
+  .o-container {
+    max-width: 1410px;
+  }
+}
+
+.o-two-side {
+  display: flex;
+  justify-content: space-between;
+}
+
+.o-two-side_center {
+  align-items: center;
+}
+
+.o-two-side_align-end {
+  align-items: flex-end;
+}
+
+.o-header-right {
+  width: 100%;
+  max-width: 1050px;
+  padding-left: 10px;
+}
+
+@mixin desktop {
+  .o-header-right {
+    padding-left: 9.3%;
+  }
+}
+
+@mixin big-desktop {
+  .o-header-right {
+    padding-left: 15%;
+  }
+}

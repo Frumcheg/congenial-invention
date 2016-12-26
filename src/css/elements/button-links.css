@@ -1,0 +1,24 @@
+.e-button-link {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 12px 19px 8px 19px;
+  vertical-align: middle;
+}
+
+.e-button-link_orange {
+  color: #FFFFFF;
+  background-color: #E74E0F;
+}
+
+.e-button-link_bordered {
+  border: solid 2px #0f0e15;
+  color: #0f0e15;
+}
+
+.e-button-link_center-block {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

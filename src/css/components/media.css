@@ -1,0 +1,17 @@
+.c-media__top {
+  padding-bottom: 15px;
+}
+
+.c-media__info {
+  padding-top: 17px;
+  padding-left: 17px;
+  border: solid 1px #e6e6e6;
+  border-top: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14);
+}
+
+.c-media__img__el {
+  display: block;
+  width: 100%;
+  height: auto;
+}

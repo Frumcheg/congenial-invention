@@ -1,0 +1,19 @@
+.o-time {
+  font-size: 16px;
+  color: #7b7b7b;
+}
+
+.o-time__icon {
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.o-time__hour {
+  text-align: center;
+}
+
+.o-time__hour,
+.o-time__min {
+  display: inline-block;
+  min-width: 2ch;
+}

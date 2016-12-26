@@ -1,0 +1,30 @@
+.c-next-performance {
+  position: relative;
+  padding-top: 49px;
+  padding-bottom: 63px;
+}
+
+.c-next-performance__header {
+  padding-bottom: 58px;
+  position: relative;
+}
+
+.c-next-performance__blot {
+  position: absolute;
+  background-image: url(../img/blot1.png);
+  width: 476px;
+  height: 109px;
+  left: 372px;
+  top: 41px;
+}
+
+.c-next-performance__button-link {
+  width: 187px;
+  margin: 45px auto 0;
+  color: #0f0e15;
+  padding: 17px 0 11px;
+}
+
+.c-counter {
+  width: 80px;
+}

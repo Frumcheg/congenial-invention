@@ -1,0 +1,65 @@
+.c-calendar {
+
+}
+
+.c-calendar__month {
+  font-family: 'AmericaXIX', serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.c-calendar__table {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(1ch - 7.143%);
+  margin-left: calc(1ch - 7.143%);
+}
+
+.c-calendar__cell {
+  width: 14.286%;
+  flex-basis: 14.286%;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.c-calendar__day {
+  font-size: 16px;
+}
+
+.c-calendar__day {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.c-calendar__day_inactive {
+  color: #b8b8b8;
+  pointer-events: none;
+}
+
+.c-calendar__day_active {
+  color: #fff;
+  pointer-events: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    background-color: #e74e0f;
+    border-radius: 50%;
+    z-index: -1;
+    top: -50%;
+    left: -50%;
+  }
+}
+
+.c-calendar__event {
+  margin-top: 12px;
+}
+
+.c-calendar__event-desc {
+  color: #555555;
+  margin-top: 6px;
+  line-height: 1.5;
+}

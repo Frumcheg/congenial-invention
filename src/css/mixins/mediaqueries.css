@@ -1,0 +1,21 @@
+@define-mixin big-desktop {
+  @media screen and (min-width: 1800px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin desktop {
+  @media screen and (min-width: 1200px) {@mixin-content;}
+}
+
+@define-mixin tablet-landscape {
+  @media screen and (min-width: 900px) {@mixin-content;}
+}
+
+@define-mixin tablet-portrait {
+  @media screen and (min-width: 600px) {@mixin-content;}
+}
+
+@define-mixin phone-only {
+  @media screen and (max-width: 599px) {@mixin-content;}
+}

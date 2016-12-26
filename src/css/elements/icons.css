@@ -1,0 +1,24 @@
+.icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  fill: inherit;
+	stroke: inherit;
+}
+
+@mixin icon search, #9A9A9A {
+
+}
+
+@mixin icon next2, #FFFFFF {
+  width: 70px;
+  height: 70px;
+}
+
+@mixin icon time, #7B7B7B {
+  stroke: #7B7B7B;
+}
+
+@mixin icon next, #0f0e15 {
+  cursor: pointer;
+}

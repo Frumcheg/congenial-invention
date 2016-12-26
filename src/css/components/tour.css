@@ -1,0 +1,26 @@
+.c-tour {
+  min-height: 475px;
+  background: url(../img/tour.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.c-tour__holder {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 256px 0 176px;
+}
+
+.c-tour__header {
+  font-family: 'AmericaXIX', serif;
+  font-size: 45px;
+  color: #ffffff;
+  margin-bottom: 34px;
+}
+
+.c-tour__link {
+  color: #ffffff;
+  border-color: #ffffff;
+  width: 187px;
+  padding: 17px 0 11px;
+}

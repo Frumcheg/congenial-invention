@@ -1,0 +1,21 @@
+.o-grid {
+  display: flex;
+}
+
+.o-grid__cell {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.o-grid__gutter_one {
+  margin-left: -30px;
+
+  & > .o-grid__cell {
+    padding-left: 30px;
+  }
+}
+
+.o-grid__1of3 > .o-grid__cell {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}

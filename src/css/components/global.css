@@ -1,0 +1,67 @@
+.c-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: $footerHeight;
+  background-color: $colorBlack;
+}
+
+.c-header {
+  background-color: $colorBlack;
+  padding-top: 46px;
+  padding-bottom: 28px;
+}
+
+.c-logo {
+  width: 100%;
+}
+
+@mixin desktop {
+  .c-logo {
+    max-width: 159px;
+  }
+}
+
+@mixin big-desktop {
+  .c-logo {
+    max-width: 192px;
+  }
+}
+
+.c-logo__image {
+  display: block;
+  height: 0;
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  padding-bottom: 63.54%;
+  background-size: contain;
+}
+
+.c-main-menu {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1050px;
+  margin-top: 33px;
+}
+
+.c-main-menu__link {
+  white-space: nowrap;
+  text-decoration: none;
+  color: $colorWhite;
+  font-size: 18px;
+
+  & + & {
+    padding-left: 0.5em;
+  }
+
+  &:hover {
+    color: $colorMain;
+  }
+}
+
+.c-header-contact {
+  color: #d1d1d1;
+  font-size: 18px;
+  padding-right: 29px;
+}

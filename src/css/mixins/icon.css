@@ -1,0 +1,9 @@
+@define-mixin icon $name, $color {
+    .icon.is-$(name) {
+        fill: $color;
+        @mixin-content;
+    }
+    .icon.is-$(name):hover {
+        fill: $color;
+    }
+}

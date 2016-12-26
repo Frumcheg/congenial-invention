@@ -1,0 +1,33 @@
+.e-input__el {
+  border: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.e-search-input {
+  position: relative;
+  max-height: 28px;
+}
+
+.e-search-input__el {
+  width: 350px;
+  background-color: #444444;
+  color: #9a9a9a;
+  font-size: 14px;
+  padding: 6px 35px 6px 17px;
+  max-height: 28px;
+}
+
+.e-search-input__button {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: auto;
+  right: 7px;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}

@@ -1,0 +1,66 @@
+.c-show-card {
+  position: relative;
+  outline-width: 0;
+}
+
+.c-show-card__name {
+  color: #0f0e15;
+  font-size: 24px;
+  line-height: 1.08;
+  margin-bottom: 15px;
+}
+
+.c-show-card__desc {
+  color: #555555;
+  line-height: 1.5;
+}
+
+.c-show-card__info {
+  height: 145px;
+}
+
+.c-show-card__counter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5px;
+  margin: auto;
+  z-index: 1;
+}
+
+.c-show-card__current-number {
+  display: inline-block;
+  min-width: 1ch;
+}
+
+.c-show-card_label {
+  position: relative;
+
+  &::before {
+    content: attr(data-label);
+    position: absolute;
+    top: 21px;
+    left: 19px;
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 1.667;
+    padding: 0 5px;
+  }
+}
+
+.c-show-card_label-color_purple {
+  &::before {
+    background-color: #5636a5;
+  }
+}
+
+.c-show-card_label-color_blue {
+  &::before {
+    background-color: #286d81;
+  }
+}
+
+.c-show-card__day {
+  font-family: 'AmericaXIX', serif;
+  font-size: 20px;
+}
