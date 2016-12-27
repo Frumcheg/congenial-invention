@@ -666,6 +666,56 @@ body {
   fill: #0f0e15;
 }
 
+.icon.is-vk {
+  fill: #ffffff;
+  width: 30px;
+  height: 18px;
+}
+
+.icon.is-vk:hover {
+  fill: #ffffff;
+}
+
+.icon.is-insta {
+  fill: #ffffff;
+  width: 23px;
+  height: 23px;
+}
+
+.icon.is-insta:hover {
+  fill: #ffffff;
+}
+
+.icon.is-facebook {
+  fill: #ffffff;
+  width: 13px;
+  height: 25px;
+}
+
+.icon.is-facebook:hover {
+  fill: #ffffff;
+}
+
+.icon.is-twitter {
+  fill: #ffffff;
+  width: 27px;
+  height: 23px;
+}
+
+.icon.is-twitter:hover {
+  fill: #ffffff;
+}
+
+.icon.is-lj {
+  fill: #ffffff;
+  width: 28px;
+  height: 34px;
+}
+
+.icon.is-lj:hover {
+  fill: #ffffff;
+}
+
 .e-input__el {
   border: none;
   font-family: inherit;
@@ -811,23 +861,6 @@ body {
   padding-right: 29px;
 }
 
-.c-socials {
-  padding-bottom: 37px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.c-socials__item {
-  display: block;
-  border: solid 2px #ffffff;
-  width: 56px;
-  height: 56px;
-}
-
 .c-footer {
   position: absolute;
   left: 0;
@@ -859,6 +892,19 @@ body {
 .c-footer__autors {
   color: #9a9a9a;
   margin-top: 34px;
+}
+
+.c-footer__partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
 }
 
 .c-next-performance {
@@ -1252,15 +1298,21 @@ body {
 
 .c-tour {
   min-height: 475px;
-  background: url(../img/tour.png) 0 0 no-repeat;
+  background: #000000 url(../img/tour.png) 50% 50% no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .c-tour__holder {
   width: 500px;
-  margin: 0 auto;
+  height: 135px;
+  margin: auto;
   text-align: center;
-  padding: 256px 0 176px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .c-tour__header {
@@ -1273,7 +1325,7 @@ body {
 .c-tour__link {
   color: #ffffff;
   border-color: #ffffff;
-  width: 187px;
+  width: 177px;
   padding: 17px 0 11px;
 }
 
@@ -1386,6 +1438,33 @@ body {
 
 .c-instagram-feed__link {
   width: 173px;
+}
+
+.c-socials {
+  padding-bottom: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-socials__item {
+  display: block;
+  border: solid 2px #ffffff;
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+
+.c-socials__icon {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .visuallyhidden {

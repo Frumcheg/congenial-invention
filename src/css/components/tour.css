@@ -1,14 +1,20 @@
 .c-tour {
   min-height: 475px;
-  background: url(../img/tour.png) 0 0 no-repeat;
+  background: #000000 url(../img/tour.png) 50% 50% no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .c-tour__holder {
   width: 500px;
-  margin: 0 auto;
+  height: 135px;
+  margin: auto;
   text-align: center;
-  padding: 256px 0 176px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .c-tour__header {
@@ -21,6 +27,6 @@
 .c-tour__link {
   color: #ffffff;
   border-color: #ffffff;
-  width: 187px;
+  width: 177px;
   padding: 17px 0 11px;
 }

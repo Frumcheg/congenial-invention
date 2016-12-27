@@ -22,3 +22,28 @@
 @mixin icon next, #0f0e15 {
   cursor: pointer;
 }
+
+@mixin icon vk, #ffffff {
+  width: 30px;
+  height: 18px;
+}
+
+@mixin icon insta, #ffffff {
+  width: 23px;
+  height: 23px;
+}
+
+@mixin icon facebook, #ffffff {
+  width: 13px;
+  height: 25px;
+}
+
+@mixin icon twitter, #ffffff {
+  width: 27px;
+  height: 23px;
+}
+
+@mixin icon lj, #ffffff {
+  width: 28px;
+  height: 34px;
+}

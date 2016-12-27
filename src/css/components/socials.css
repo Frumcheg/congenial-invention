@@ -1,0 +1,22 @@
+.c-socials {
+  padding-bottom: 37px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-socials__item {
+  display: block;
+  border: solid 2px #ffffff;
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+
+.c-socials__icon {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

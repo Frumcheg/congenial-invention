@@ -30,3 +30,10 @@
   color: #9a9a9a;
   margin-top: 34px;
 }
+
+.c-footer__partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
