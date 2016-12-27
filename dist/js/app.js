@@ -52,6 +52,26 @@
           draggable: false
         });
       })
+
+      init('.js-friend-slider', function($el) {
+        $el.slick({
+          arrows: false,
+          fade: true,
+          dots: true,
+          appendDots: '.js-slider-dots-friends',
+          dotsClass: 'c-slider-dots',
+        });
+      });
+
+      DG.then(function () {
+        var map = DG.map('map', {
+          center: [56.8430, 60.6408],
+          zoom: 16,
+          scrollWheelZoom: false
+        });
+
+        DG.marker([56.8430, 60.6408]).addTo(map)
+      });
     });
   }
 })(window);
