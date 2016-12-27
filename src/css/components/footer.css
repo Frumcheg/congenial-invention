@@ -1,0 +1,32 @@
+.c-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: $footerHeight;
+  background-color: $colorBlack;
+  background-image: url(../img/footerbg.png);
+  background-position: 0 0;
+  color: #ffffff;
+  padding-top: 68px;
+}
+
+.c-footer__to-us {
+  font-family: 'AmericaXIX', serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.c-footer__org-name {
+  font-family: 'AmericaXIX', serif;
+  font-size: 20px;
+  padding-bottom: 21px;
+}
+
+.c-footer__addr {
+  padding-bottom: 34px;
+}
+
+.c-footer__autors {
+  color: #9a9a9a;
+  margin-top: 34px;
+}

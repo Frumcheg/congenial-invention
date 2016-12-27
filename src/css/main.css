@@ -16,6 +16,7 @@
 @import './elements/headers.css';
 
 @import './components/global.css';
+@import './components/footer.css';
 @import './components/index.css';
 @import './components/slider.css';
 @import './components/show-card.css';
@@ -24,5 +25,6 @@
 @import './components/news.css';
 @import './components/tour.css';
 @import './components/troupe.css';
-
+@import './components/friends.css';
+@import './components/instagram-feed.css';
 @import './tools/utils.css';

@@ -1,0 +1,35 @@
+.c-friends {
+  padding-top: 56px;
+  padding-bottom: 30px;
+}
+
+.c-friends__slider {
+  float: right;
+  max-width: 344px;
+  position: relative;
+}
+
+.c-friends__header {
+  font-family: 'AmericaXIX', serif;
+  font-size: 45px;
+  max-width: 700px;
+  margin-bottom: 31px;
+}
+
+.c-friends__content {
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+.c-friends__subtitle {
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+
+.c-friends__text {
+  color: #555555;
+}
+
+.c-friends__link {
+  width: 153px;
+}

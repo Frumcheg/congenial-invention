@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
   <script src="//cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script src="//maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
   <script type="text/javascript" src="../dist/js/app.js"></script>
 </head>
 <body>
@@ -340,11 +341,86 @@
         <a href="" class="e-button-link c-tour__link e-button-link_bordered e-button-link_center-block">Пройти</a>
       </div>
     </div>
-    <div class="o-container"></div>
-    <div class="o-container"></div>
-    <div class="o-container-wide"></div>
+    <div class="o-container c-friends">
+      <div class="c-friends__slider">
+        <div class="js-slider-dots-friends c-slider-dots__wrapper"></div>
+        <div class="js-friend-slider">
+          <img src="../dist/img/friend.png" alt="">
+          <img src="../dist/img/friend.png" alt="">
+          <img src="../dist/img/friend.png" alt="">
+          <img src="../dist/img/friend.png" alt="">
+        </div>
+      </div>
+      <div class="c-friends__header">Клуб друзей</div>
+      <div class="c-friends__content">
+        <div class="c-friends__subtitle">
+          Присоединяйтесь к клубу друзей и посещайте наш театр на выгодных условиях!
+        </div>
+        <div class="c-friends__text">
+          Не следует, однако забывать, что реализация намеченных плановых заданий позволяетвыполнять важные задания по разработке форм развития. Идейные соображения высшегопорядка, а также новая модель организационной деятельности требуют определенияи уточнения позиций, занимаемых участниками в отношении поставленных задач.
+        </div>
+      </div>
+      <a href="" class="e-button-link c-friends__link e-button-link_bordered e-button-link_center-block">Подробнее</a>
+    </div>
+    <div class="o-container c-instagram-feed">
+      <div class="c-instagram-feed__blot"></div>
+      <div class="c-instagram-feed__header">Мы в Instagram</div>
+      <div class="c-instagram-feed__items o-grid o-grid__1of6 o-grid__gutter_two">
+        <div class="o-grid__cell">
+          <div class="c-instagram-feed__item" style="background-image: url(https://unsplash.it/300/300)"></div>
+        </div>
+        <div class="o-grid__cell">
+          <div class="c-instagram-feed__item" style="background-image: url(https://unsplash.it/301/301)"></div>
+        </div>
+        <div class="o-grid__cell">
+          <div class="c-instagram-feed__item" style="background-image: url(https://unsplash.it/302/302)"></div>
+        </div>
+        <div class="o-grid__cell">
+          <div class="c-instagram-feed__item" style="background-image: url(https://unsplash.it/303/303)"></div>
+        </div>
+        <div class="o-grid__cell">
+          <div class="c-instagram-feed__item" style="background-image: url(https://unsplash.it/304/304)"></div>
+        </div>
+        <div class="o-grid__cell">
+          <div class="c-instagram-feed__item" style="background-image: url(https://unsplash.it/305/305)"></div>
+        </div>
+      </div>
+      <a href="" class="e-button-link c-instagram-feed__link e-button-link_bordered e-button-link_center-block">Показать ещё</a>
+    </div>
+    <div class="o-container-wide">
+      <div id="map" style="height:465px"></div>
+    </div>
     <div class="o-container-wide c-footer">
-
+      <div class="o-container o-two-side">
+        <div class="c-footer__left">
+          <div class="c-footer__org-name">Некоммерческое партнёрство «Коляда-Театр»</div>
+          <div class="c-footer__addr">
+            Адрес: 620062, г. Екатеринбург, пр. Ленина, 97 <br>
+            Тел. +7 (343) 359-80-22 <br>
+            E-mail: info@kolyada-theatre.ru
+          </div>
+          <a class="e-button-link e-button-link_orange" href="">Билеты</a>
+        </div>
+        <div class="c-footer__right">
+          <div class="c-footer__to-us">Присоединяйтесь к нам!</div>
+          <div class="c-socials">
+            <a href="" class="c-socials__item"></a>
+            <a href="" class="c-socials__item"></a>
+            <a href="" class="c-socials__item"></a>
+            <a href="" class="c-socials__item"></a>
+            <a href="" class="c-socials__item"></a>
+          </div>
+          <form action="" class="e-search-input">
+            <button class="e-search-input__button" type="submit">
+              <svg class="icon is-search e-search-input__ico">
+                <use xlink:href="#search" />
+              </svg>
+            </button>
+            <input class="e-input__el e-search-input__el" type="text" name="" value="" placeholder="Спектакли, артисты, события...">
+          </form>
+          <div class="c-footer__autors">Создание сайта - Web-Архитектура</div>
+        </div>
+      </div>
     </div>
   </div>
 </body>

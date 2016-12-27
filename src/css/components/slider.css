@@ -93,6 +93,7 @@
   right: 0;
   bottom: 22px;
   text-align: center;
+  z-index: 1;
 }
 
 .slick-slider.c-slider-info {
