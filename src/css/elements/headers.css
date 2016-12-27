@@ -6,3 +6,9 @@
 .e-header_size_big {
   font-size: 45px;
 }
+
+.e-header_title {
+  font-size: 65px;
+  line-height: 80px;
+  margin: 50px 0;
+}

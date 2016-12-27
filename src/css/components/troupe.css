@@ -1,0 +1,38 @@
+.c-troupe {
+  padding-bottom: 69px;
+}
+
+.c-troupe__items {
+  font-size: 0;
+}
+
+.c-troupe__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 355px;
+  min-height: 250px;
+  margin-right: 30px;
+}
+.c-troupe__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.c-troupe__img {
+  float: left;
+  width: 163px;
+  height: 245px;
+}
+
+.c-troupe__img img {
+  width: 163px;
+  height: 245px;
+}
+
+.c-troupe__name {
+  float: left;
+  text-decoration: underline;
+  color: #e74e0f;
+  font-family: AmericaXIX, serif;
+  font-size: 20px;
+  margin: 100px 0 0 30px;
+}

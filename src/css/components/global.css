@@ -60,6 +60,10 @@
   }
 }
 
+.c-main-menu__link-active {
+  color: #e74e0f;
+}
+
 .c-header-contact {
   color: #d1d1d1;
   font-size: 18px;
