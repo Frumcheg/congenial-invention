@@ -2,19 +2,21 @@
   padding-bottom: 69px;
 }
 
+.c-troupe__header {
+  font-size: 65px;
+  line-height: 80px;
+  padding: 50px 0;
+}
+
 .c-troupe__items {
-  font-size: 0;
+  margin-left: -30px;
 }
 
 .c-troupe__item {
-  display: inline-block;
-  vertical-align: top;
-  width: 355px;
-  min-height: 250px;
-  margin-right: 30px;
-}
-.c-troupe__item:nth-child(3n) {
-  margin-right: 0;
+  min-width: 355px;
+  height: 245px;
+  padding-left: 30px;
+  margin-bottom: 30px;
 }
 
 .c-troupe__img {
@@ -30,7 +32,6 @@
 
 .c-troupe__name {
   float: left;
-  text-decoration: underline;
   color: #e74e0f;
   font-family: AmericaXIX, serif;
   font-size: 20px;
