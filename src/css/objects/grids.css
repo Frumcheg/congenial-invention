@@ -2,13 +2,8 @@
   display: flex;
 }
 
-.o-grid__multirow {
+.o-grid_multirow {
   flex-wrap: wrap;
-}
-
-.o-grid__multirow.o-grid__1of3 > .o-grid__cell {
-  flex-grow: 1;
-  max-width: none;
 }
 
 .o-grid__cell {
@@ -40,4 +35,9 @@
 .o-grid__1of6 > .o-grid__cell {
   flex: 0 0 16.6667%;
   max-width: 16.6667%;
+}
+
+.o-grid_multirow > .o-grid__cell {
+  flex-grow: 1;
+  max-width: none;
 }
