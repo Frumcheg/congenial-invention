@@ -33,7 +33,8 @@
 .c-troupe__name {
   float: left;
   color: #e74e0f;
-  font-family: AmericaXIX, serif;
+  font-family: 'AmericaXIX', serif;
   font-size: 20px;
+  line-height: 30px;
   margin: 100px 0 0 30px;
 }

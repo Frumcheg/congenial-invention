@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'FiraSans';
-  font-path: '../fonts/FiraSans-Regular';
+  font-path: '../fonts/FiraSans-Regular (2)';
   font-weight: normal;
   font-style: normal;
 }
@@ -8,6 +8,13 @@
 @font-face {
   font-family: 'AmericaXIX';
   font-path: '../fonts/AmericaXIX';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraSansBook';
+  font-path: '../fonts/FiraSans-Book';
   font-weight: normal;
   font-style: normal;
 }

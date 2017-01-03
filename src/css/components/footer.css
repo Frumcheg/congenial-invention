@@ -8,6 +8,7 @@
   background-position: 0 0;
   color: #ffffff;
   padding-top: 68px;
+  box-sizing: border-box;
 }
 
 .c-footer__to-us {
