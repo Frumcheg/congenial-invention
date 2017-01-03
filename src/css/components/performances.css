@@ -12,7 +12,46 @@
 .c-performances-section__title {
   font-size: 20px;
   line-height: 80px;
+  color: #0f0e15;
   font-family: 'AmericaXIX', serif;
+}
+
+.c-performances-section__filter {
+  float: right;
+  font-size: 16px;
+  line-height: 80px;
+  font-family: 'FiraSans', serif;
+  padding-right: 35px;
+  position: relative;
+}
+
+.c-performances-section__filter:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.c-performances-section__filter::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #0f0e15;
+  border-radius: 50%;
+}
+
+.c-performances-section__filter::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 7px;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #0f0e15;
+  border-top-style: none;
+  border-right-style: none;
+  transform: rotate(-45deg);
 }
 
 .c-performances-section__description {
