@@ -49,12 +49,65 @@
     </div>
     <div class="o-container c-performances">
       <div class="e-header c-performances__header">Спектакли «Коляда-Театра»</div>
-      <div class=" c-performances-section__title">
-        <div class="c-performances-section__filter">
-          Выбрать по критериям
+      <div class="c-filter">
+        <div class="c-filter__title">
+          <input type="checkbox" id="filter-collapsed">
+          <label for="filter-collapsed">Выбрать по критериям</label>
         </div>
-        Текущий репертуар
+        <div class="c-filter__content">
+          <fieldset>
+            <legend>Жанр</legend>
+            <div class="c-filter__column">
+              <input type="radio" id="genre-all" name="genre" value="genre-all">
+              <label for="genre-all">Все</label>
+              <input type="radio" id="genre-tragicomedy" name="genre" value="genre-tragicomedy">
+              <label for="genre-tragicomedy">Трагикомедия</label>
+              <input type="radio" id="genre-comedy" name="genre" value="genre-comedy">
+              <label for="genre-comedy">Комедия</label>
 
+              <input type="radio" id="genre-tragedy" name="genre" value="genre-tragedy">
+              <label for="genre-tragedy">Трагедия</label>
+              <input type="radio" id="genre-mono" name="genre" value="genre-mono">
+              <label for="genre-mono">Моноспектакль</label>
+              <input type="radio" id="genre-drama" name="genre" value="genre-drama">
+              <label for="genre-drama">Драма</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Пьеса</legend>
+            <div class="c-filter__column">
+              <input type="radio" id="play-all" name="play" value="play-all">
+              <label for="play-all">Все</label>
+              <input type="radio" id="play-foreign" name="play" value="play-foreign">
+              <label for="play-foreign">Зарубежная драматургия</label>
+
+              <input type="radio" id="play-modern" name="play" value="play-modern">
+              <label for="play-modern">Современная драматургия</label>
+              <input type="radio" id="play-classic" name="play" value="play-classic">
+              <label for="play-classic">Классика</label>
+
+              <input type="radio" id="play-nk" name="play" value="play-nk">
+              <label for="play-nk">Пьесы Николая Коляды</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Возраст</legend>
+            <div class="c-filter__column">
+              <input type="radio" id="age-all" name="age" value="age-all">
+              <label for="age-all">Все</label>
+              <input type="radio" id="age-adult" name="age" value="age-adult">
+              <label for="age-adult">Для взрослых</label>
+              <input type="radio" id="age-children" name="age" value="age-children">
+              <label for="age-children">Для детей</label>
+
+              <input type="radio" id="age-family" name="age" value="age-family">
+              <label for="age-family">Для семейного просмотра</label>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <div class=" c-performances-section__title">
+        Текущий репертуар
       </div>
       <div class="o-grid o-grid_multirow o-grid__1of4 c-performances__section">
         <div class="c-performances__item o-grid__cell">

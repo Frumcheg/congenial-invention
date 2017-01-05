@@ -63,6 +63,18 @@
         });
       });
 
+      init('#filter-collapsed', function($el) {
+        $el.on( "click", function() {
+          init('.c-filter__content', function ($el1){
+            if ($el.is(':checked')){
+              $el1.addClass("c-filter__content_visible");
+            } else {
+              $el1.removeClass("c-filter__content_visible");
+            }
+          })
+        } );
+      });
+
       DG.then(function () {
         var map = DG.map('map', {
           center: [56.8430, 60.6408],
@@ -72,6 +84,8 @@
 
         DG.marker([56.8430, 60.6408]).addTo(map)
       });
-    });
+
+
+    })
   }
 })(window);

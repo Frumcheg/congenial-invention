@@ -29,5 +29,6 @@
 @import './components/friends.css';
 @import './components/instagram-feed.css';
 @import './components/socials.css';
+@import './components/filter.css';
 
 @import './tools/utils.css';
