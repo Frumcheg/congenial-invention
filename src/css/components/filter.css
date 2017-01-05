@@ -1,3 +1,4 @@
+
 .c-filter input {
     display: none;
 }
@@ -10,38 +11,35 @@
   float: right;
   font-size: 16px;
   line-height: 16px;
-  font-family: 'FiraSans', serif;
-  padding: 30px 35px 7px 0;
+  font-family: 'FiraSans', sans-serif;
   position: relative;
+  padding-top: 30px;
 }
 
+.c-filter-arrow {
+  position: absolute;
+  right: 4px;
+  top: 31px;
+  transform: rotate(90deg) scale(0.8);
+}
+
+.c-filter__title label {
+  padding-right: 35px;
+}
 .c-filter__title label::before {
   content: "";
   position: absolute;
-  top: 27px;
+  top: 26px;
   right: 0;
-  width: 19px;
-  height: 19px;
+  width: 20px;
+  height: 20px;
   border: 2px solid #0f0e15;
   border-radius: 50%;
 }
 
-.c-filter__title label::after {
-  content: "";
-  position: absolute;
-  top: 32px;
-  right: 7px;
-  width: 7px;
-  height: 7px;
-  border: 2px solid #0f0e15;
-  border-top-style: none;
-  border-right-style: none;
-  transform: rotate(-45deg);
-}
-
-.c-filter__title input:checked + label::after {
-  transform: rotate(135deg);
-  top: 36px;
+.c-filter__title input:checked + label .c-filter-arrow {
+  transform: rotate(-90deg) scale(0.8);
+  top: 29px;
 }
 
 .c-filter__content {
@@ -63,7 +61,7 @@
 }
 
 .c-filter__content legend {
-  font-family: 'FiraSans', serif;
+  font-family: 'FiraSans', sans-serif;
   font-size: 16px;
   line-height: 14px;
   color: #0f0e15;
@@ -81,7 +79,7 @@
 }
 */
 .c-filter__content label {
-  font-family: 'FiraSansBook', serif;
+  font-family: 'FiraSansBook', sans-serif;
   font-size: 16px;
   line-height: 14px;
   color: #555555;

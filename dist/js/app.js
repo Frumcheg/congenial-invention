@@ -63,7 +63,7 @@
         });
       });
 
-      init('#filter-collapsed', function($el) {
+      init('.js-filter-collapsed', function($el) {
         $el.on( "click", function() {
           init('.c-filter__content', function ($el1){
             if ($el.is(':checked')){
