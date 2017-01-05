@@ -54,6 +54,7 @@
 
 .c-main-menu__link-active {
   color: #e74e0f;
+  pointer-events: none;
 }
 
 .c-header-contact {

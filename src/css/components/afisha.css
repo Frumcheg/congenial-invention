@@ -1,0 +1,19 @@
+.c-afisha {
+  position: relative;
+}
+
+.c-afisha__header {
+  font-size: 45px;
+  padding-top: 60px;
+  padding-bottom: 35px;
+}
+
+.c-afisha__blot {
+  position: absolute;
+  width: 476px;
+  height: 109px;
+  z-index: -1;
+  background: #ffffff url(../img/blot3.png) 0 0 no-repeat;
+  top: 46px;
+  left: 55px;
+}

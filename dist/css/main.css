@@ -462,11 +462,11 @@ template {
 
 @font-face {
   font-family: 'FiraSans';
-  src: url("../fonts/FiraSans-Regular (2).eot");
-  src: url("../fonts/FiraSans-Regular (2).eot?#iefix") format('embedded-opentype'),
-       url("../fonts/FiraSans-Regular (2).woff") format('woff'),
-       url("../fonts/FiraSans-Regular (2).ttf") format('truetype'),
-       url("../fonts/FiraSans-Regular (2).svg") format('svg');
+  src: url("../fonts/FiraSans-Regular.eot");
+  src: url("../fonts/FiraSans-Regular.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/FiraSans-Regular.woff") format('woff'),
+       url("../fonts/FiraSans-Regular.ttf") format('truetype'),
+       url("../fonts/FiraSans-Regular.svg") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -746,6 +746,17 @@ body {
   fill: #ffffff;
 }
 
+.icon.is-download {
+  fill: #555555;
+  width: 19px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+.icon.is-download:hover {
+  fill: #555555;
+}
+
 .e-input__el {
   border: none;
   font-family: inherit;
@@ -815,6 +826,10 @@ body {
   font-size: 45px;
 }
 
+.e-link {
+  text-decoration: none;
+}
+
 .c-header {
   background-color: #050505;
   padding-top: 46px;
@@ -877,6 +892,7 @@ body {
 
 .c-main-menu__link-active {
   color: #e74e0f;
+  pointer-events: none;
 }
 
 .c-header-contact {
@@ -1577,6 +1593,7 @@ body {
   right: 0;
 }
 
+<<<<<<< HEAD
 .c-filter input {
     display: none;
 }
@@ -1691,6 +1708,82 @@ body {
   background-color: #0f0e15;
   border-color: #0f0e15;
   color: #ffffff;
+=======
+.c-afisha {
+  position: relative;
+}
+
+.c-afisha__header {
+  font-size: 45px;
+  padding-top: 60px;
+  padding-bottom: 35px;
+}
+
+.c-afisha__blot {
+  position: absolute;
+  width: 476px;
+  height: 109px;
+  z-index: -1;
+  background: #ffffff url(../img/blot3.png) 0 0 no-repeat;
+  top: 46px;
+  left: 55px;
+}
+
+.c-line-calendar__month {
+  font-family: 'AmericaXIX', serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.c-line-calendar__month_selected {
+  pointer-events: none;
+  color: #7b7b7b;
+}
+
+.c-line-calendar__link {
+  color: #555555;
+}
+
+.c-line-calendar__days {
+  position: relative;
+  margin-top: 35px;
+  margin-left: -12px;
+}
+
+.c-line-calendar__day {
+  outline-width: 0;
+}
+
+.c-line-calendar__day-item {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  padding-top: 9px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.c-line-calendar__arrow {
+  position: absolute;
+  top: 9px;
+}
+
+.is-selected .c-line-calendar__day-item {
+  color: #ffffff;
+  background-color: #e74e0f;
+  pointer-events: none;
+}
+
+.c-line-calendar__arrow_left {
+  left: -17px;
+}
+
+.c-line-calendar__arrow_right {
+  right: -29px;
+>>>>>>> afisha
 }
 
 .visuallyhidden {
@@ -1707,4 +1800,138 @@ body {
 
 .muted {
   color: #7b7b7b;
+}
+
+.rotate-180 {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.align-right {
+  display: inline-block;
+  text-align: right;
+}
+
+.c-schedule {
+  padding-bottom: 80px;
+}
+
+.c-schedule__date {
+  font-family: 'AmericaXIX', serif;
+  color: #7b7b7b;
+  font-size: 20px;
+  float: left;
+  min-width: 145px;
+  box-sizing: border-box;
+  margin-top: -7px;
+}
+
+.c-schedule__items {
+  overflow: hidden;
+}
+
+.c-schedule__day {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: solid 2px #dadada;
+}
+
+.c-schedule__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-schedule__item + .c-schedule__item {
+  padding-top: 40px;
+}
+
+.c-schedule__img {
+  -ms-flex-preferred-size: 257px;
+      flex-basis: 257px;
+  max-width: 257px;
+  max-height: 175px;
+  overflow: hidden;
+  position: relative;
+}
+
+.c-schedule__img img {
+  max-width: 100%;
+}
+
+.c-schedule__img::before {
+  position: absolute;
+  content: attr(data-label);
+  height: 20px;
+  line-height: 20px;
+  font-size: 10px;
+  color: #ffffff;
+  padding: 0 5px;
+  top: 12px;
+  left: 12px;
+}
+
+.c-schedule__img_label-color_blue::before {
+  background-color: #286d81;
+}
+
+.c-schedule__img_label-color_purple::before {
+  background-color: #5636a5;
+}
+
+.c-schedule__info {
+  padding: 0 34px;;
+  -webkit-box-flex: 2;;
+      -ms-flex-positive: 2;;
+          flex-grow: 2;
+}
+
+.c-schedule__time {
+  padding-bottom: 9px;
+}
+
+.c-schedule__author {
+  font-family: 'FiraSansBook', sans-serif;
+  padding-bottom: 5px;
+}
+
+.c-schedule__name {
+  font-size: 24px;
+  color: #29221a;
+  padding-bottom: 17px;
+}
+
+.c-schedule__text {
+  font-family: 'FiraSansBook', sans-serif;
+  color: #555555;
+  max-width: 350px;
+  line-height: 1.5;
+  padding-bottom: 19px;
+}
+
+.c-schedule__buttons {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+}
+
+.c-schedule__duration {
+  color: #555555;
+}
+
+.c-schedule__more-button {
+  width: 172px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 9px;
+}
+
+.c-schedule__buy-tickets {
+  width: 172px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #e74e0f;
+  color: #ffffff;
 }

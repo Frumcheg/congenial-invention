@@ -1,0 +1,57 @@
+.c-line-calendar__month {
+  font-family: 'AmericaXIX', serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.c-line-calendar__month_selected {
+  pointer-events: none;
+  color: #7b7b7b;
+}
+
+.c-line-calendar__link {
+  color: #555555;
+}
+
+.c-line-calendar__days {
+  position: relative;
+  margin-top: 35px;
+  margin-left: -12px;
+}
+
+.c-line-calendar__day {
+  outline-width: 0;
+}
+
+.c-line-calendar__day-item {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  padding-top: 9px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.c-line-calendar__arrow {
+  position: absolute;
+  top: 9px;
+}
+
+.is-selected {
+  .c-line-calendar__day-item {
+    color: #ffffff;
+    background-color: #e74e0f;
+    pointer-events: none;
+  }
+}
+
+.c-line-calendar__arrow_left {
+  left: -17px;
+}
+
+.c-line-calendar__arrow_right {
+  right: -29px;
+}

@@ -75,14 +75,26 @@
         } );
       });
 
-      DG.then(function () {
-        var map = DG.map('map', {
-          center: [56.8430, 60.6408],
-          zoom: 16,
-          scrollWheelZoom: false
-        });
+      init('#map', function($el) {
+        DG.then(function() {
+          var map = DG.map($el.prop('id'), {
+            center: [56.8430, 60.6408],
+            zoom: 16,
+            scrollWheelZoom: false
+          });
 
-        DG.marker([56.8430, 60.6408]).addTo(map)
+          DG.marker([56.8430, 60.6408]).addTo(map);
+        })
+      });
+
+      init('.js-days-slider', function($el) {
+        $el.slick({
+          prevArrow: '.js-arrow-days-prev',
+          nextArrow: '.js-arrow-days-next',
+          slidesToShow: 25,
+          slidesToScroll: 5,
+          infinite: false
+        });
       });
 
 

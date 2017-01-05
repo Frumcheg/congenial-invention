@@ -13,3 +13,12 @@
 .muted {
   color: #7b7b7b;
 }
+
+.rotate-180 {
+  transform: rotateY(180deg);
+}
+
+.align-right {
+  display: inline-block;
+  text-align: right;
+}

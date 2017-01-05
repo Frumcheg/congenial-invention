@@ -47,3 +47,9 @@
   width: 28px;
   height: 34px;
 }
+
+@mixin icon download, #555555 {
+  width: 19px;
+  height: 18px;
+  vertical-align: middle;
+}
