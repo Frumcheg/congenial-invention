@@ -1593,7 +1593,6 @@ body {
   right: 0;
 }
 
-<<<<<<< HEAD
 .c-filter input {
     display: none;
 }
@@ -1708,7 +1707,8 @@ body {
   background-color: #0f0e15;
   border-color: #0f0e15;
   color: #ffffff;
-=======
+}
+
 .c-afisha {
   position: relative;
 }
@@ -1783,33 +1783,6 @@ body {
 
 .c-line-calendar__arrow_right {
   right: -29px;
->>>>>>> afisha
-}
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
-}
-
-.muted {
-  color: #7b7b7b;
-}
-
-.rotate-180 {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.align-right {
-  display: inline-block;
-  text-align: right;
 }
 
 .c-schedule {
@@ -1934,4 +1907,30 @@ body {
   text-align: center;
   background-color: #e74e0f;
   color: #ffffff;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.muted {
+  color: #7b7b7b;
+}
+
+.rotate-180 {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.align-right {
+  display: inline-block;
+  text-align: right;
 }

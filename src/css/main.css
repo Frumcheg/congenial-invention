@@ -33,5 +33,6 @@
 @import './components/filter.css';
 @import './components/afisha.css';
 @import './components/line-calendar.css';
+@import './components/schedule.css';
 
 @import './tools/utils.css';
