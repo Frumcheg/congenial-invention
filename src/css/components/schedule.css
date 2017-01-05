@@ -1,0 +1,119 @@
+.c-schedule {
+  padding-bottom: 80px;
+}
+
+.c-schedule__date {
+  font-family: 'AmericaXIX', serif;
+  color: #7b7b7b;
+  font-size: 20px;
+  float: left;
+  min-width: 145px;
+  box-sizing: border-box;
+  margin-top: -7px;
+}
+
+.c-schedule__items {
+  overflow: hidden;
+}
+
+.c-schedule__day {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: solid 2px #dadada;
+}
+
+.c-schedule__item {
+  display: flex;
+  justify-content: space-between;
+
+  & + & {
+    padding-top: 40px;
+  }
+}
+
+.c-schedule__img {
+  flex-basis: 257px;
+  max-width: 257px;
+  max-height: 175px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    max-width: 100%;
+  }
+
+  &::before {
+    position: absolute;
+    content: attr(data-label);
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+    color: #ffffff;
+    padding: 0 5px;
+    top: 12px;
+    left: 12px;
+  }
+}
+
+.c-schedule__img_label-color_blue {
+  &::before {
+    background-color: #286d81;
+  }
+}
+
+.c-schedule__img_label-color_purple {
+  &::before {
+    background-color: #5636a5;
+  }
+}
+
+.c-schedule__info {
+  padding: 0 34px;;
+  flex-grow: 2;
+}
+
+.c-schedule__time {
+  padding-bottom: 9px;
+}
+
+.c-schedule__author {
+  font-family: 'FiraSansBook', sans-serif;
+  padding-bottom: 5px;
+}
+
+.c-schedule__name {
+  font-size: 24px;
+  color: #29221a;
+  padding-bottom: 17px;
+}
+
+.c-schedule__text {
+  font-family: 'FiraSansBook', sans-serif;
+  color: #555555;
+  max-width: 350px;
+  line-height: 1.5;
+  padding-bottom: 19px;
+}
+
+.c-schedule__buttons {
+  flex-basis: 0;
+}
+
+.c-schedule__duration {
+  color: #555555;
+}
+
+.c-schedule__more-button {
+  width: 172px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 9px;
+}
+
+.c-schedule__buy-tickets {
+  width: 172px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #e74e0f;
+  color: #ffffff;
+}
