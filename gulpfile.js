@@ -1,6 +1,7 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync').create();
 const nunjucks    = require('gulp-nunjucks');
+const del         = require('del');
 
 /* PostCSS Stuff */
 
@@ -24,12 +25,12 @@ const cssConfig = [
 /* End PostCSS Stuff */
 
 gulp.task('html', () =>
-  gulp.src('src/html/*.html')
+  gulp.src('src/html/[^_]*.html')
     .pipe(nunjucks.compile())
     .pipe(gulp.dest('dist/pages'))
 )
 
-gulp.task('serve', ['styles', 'html'], () => {
+gulp.task('serve', ['clean', 'styles', 'html'], () => {
 
   browserSync.init({
     server: {
@@ -62,3 +63,10 @@ gulp.task('html-watch', ['html'], function (done) {
   browserSync.reload();
   done();
 });
+
+gulp.task('clean', () =>
+  del([
+    'dist/pages/**/*',
+    'dist/css/**/*'
+  ])
+);

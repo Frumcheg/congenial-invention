@@ -13,6 +13,7 @@
   "devDependencies": {
     "autoprefixer": "^6.5.3",
     "browser-sync": "^2.18.2",
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-cheerio": "^0.6.2",
     "gulp-nunjucks": "^3.0.0",
