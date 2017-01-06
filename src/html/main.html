@@ -1,0 +1,345 @@
+{% extends "_layout.html" %}
+{% block title %}Главная{% endblock %}
+{% block page %}
+<div class="o-container-wide c-slider">
+  <div class="js-carousel">
+    <div class="c-slider-img">
+      <img class="c-slider-img__el" src="https://unsplash.it/1123/473">
+    </div>
+    <div class="c-slider-img">
+      <img  class="c-slider-img__el" src="https://unsplash.it/500/473">
+    </div>
+    <div class="c-slider-img">
+      <img  class="c-slider-img__el" src="https://unsplash.it/2000/473">
+    </div>
+    <div class="c-slider-img">
+      <img  class="c-slider-img__el" src="https://unsplash.it/800/473">
+    </div>
+    <div class="c-slider-img">
+      <img  class="c-slider-img__el" src="https://unsplash.it/650/1473">
+    </div>
+  </div>
+  <div class="c-slider-arrow c-slider-arrow_left js-arrow-prev">
+    <svg class="icon is-next2">
+      <use xlink:href="#next2" />
+    </svg>
+  </div>
+  <div class="c-slider-arrow c-slider-arrow_right js-arrow-next">
+    <svg class="icon is-next2">
+      <use xlink:href="#next2" />
+    </svg>
+  </div>
+  <div class="c-slider-info js-carousel-info">
+    <div>
+      <a class="c-slider-info__link" href="#">Баба Шанель</a>
+      <div class="c-slider-info__author">Николай Коляда</div>
+      <div class="c-slider-info__about">
+        Комедия в двух действиях (18+) <br> 2 часа 20 минут с антрактом
+      </div>
+      <div class="c-slider-info__desc">
+        Спектакль начинается с весёлого застолья.<br>
+Актовый зал ДК ВОГ (Всероссийского Общества Глухих) празднично украшенпо случаю 10-летия ансамбля русской песни «Наитие». Участницы ансамбля – 5 разномастных старушек. Всем им далеко за 60, но так хочется жить, хочетсялюбить и быть любимыми.  Тем более что руководитель ансамбля «Наитие» – молодой баянист Сергей, в которого все старушки тайно влюблены.
+      </div>
+    </div>
+    <div>
+      <a class="c-slider-info__link" href="#">Шаша Гантель</a>
+      <div class="c-slider-info__author">Константин Константинопольский</div>
+      <div class="c-slider-info__about">
+        Комедия в двух действиях (18+) <br> 2 часа 20 минут с антрактом
+      </div>
+    </div>
+    <div>
+      <a class="c-slider-info__link" href="#">Гага Бешамель</a>
+      <div class="c-slider-info__author">Николай Коляда</div>
+      <div class="c-slider-info__about">
+        Комедия в двух действиях (18+) <br> 2 часа 20 минут с антрактом
+      </div>
+    </div>
+    <div>
+      <a class="c-slider-info__link" href="#">Корабли лавировали, лавировали да не вылавировали</a>
+      <div class="c-slider-info__author">Петр Ильич Чайковский</div>
+      <div class="c-slider-info__about">
+        Комедия в двух действиях (18+) <br> 2 часа 20 минут с антрактом
+      </div>
+    </div>
+    <div>
+      <a class="c-slider-info__link" href="#">Баба Шанель</a>
+      <div class="c-slider-info__author">Николай Коляда</div>
+      <div class="c-slider-info__about">
+        Комедия в двух действиях (18+) <br> 2 часа 20 минут с антрактом
+      </div>
+    </div>
+  </div>
+  <div class="c-slider-dots__wrapper js-slider-dots"></div>
+</div>
+<div class="o-container c-next-performance">
+  <div class="c-next-performance__blot"></div>
+  <div class="e-header e-header_size_big c-next-performance__header">Ближайшие спектакли</div>
+  <div class="o-grid o-grid__gutter_one o-grid__1of3 c-next-performance__grid">
+    <div class="o-grid__cell c-media c-show-card">
+      <div class="o-two-side o-two-side_align-end c-media__top">
+        <div class="c-show-card__day">Сегодня</div>
+        <div class="o-time">
+          <svg class="icon is-time o-time__icon">
+            <use xlink:href="#time" />
+          </svg>19:00</div>
+      </div>
+      <div class="c-media__img c-show-card_label c-show-card_label-color_purple" data-label="Премьера">
+        <img class="c-media__img__el c-show-card__img" src="https://unsplash.it/1123/473">
+      </div>
+      <div class="c-media__info c-show-card__info">
+        <div class="c-show-card__name">Кошка на раскалённой крыше</div>
+        <div class="c-show-card__desc">Драма в двух действиях (18+) <br> Малахитовый зал</div>
+      </div>
+    </div>
+    <div class="o-grid__cell c-media c-show-card">
+      <div class="c-show-card__counter c-counter o-two-side">
+        <div class="js-show-arrow-prev c-slider-arrow_left">
+          <svg class="icon is-next">
+            <use xlink:href="#next" />
+          </svg>
+        </div>
+        <div><span class="c-show-card__current-number js-show-card-counter">1</span><span class="muted">/3</span></div>
+        <div class="js-show-arrow-next c-slider-arrow_right">
+          <svg class="icon is-next">
+            <use xlink:href="#next" />
+          </svg>
+        </div>
+      </div>
+      <div class="js-show-card-slider c-next-show-slider">
+        <div class="c-media c-media_slide c-show-card">
+          <div class="o-two-side o-two-side_align-end c-media__top">
+            <div class="c-show-card__day">Завтра</div>
+            <div class="o-time">
+              <svg class="icon is-time o-time__icon">
+                <use xlink:href="#time" />
+              </svg><span class="o-time__hour">17</span>:<span class="o-time__min">00</span>
+            </div>
+          </div>
+          <div class="c-media__img c-show-card_label c-show-card_label-color_blue" data-label="Гастроли">
+            <img class="c-media__img__el c-show-card__img" src="https://unsplash.it/1123/473">
+          </div>
+          <div class="c-media__info c-show-card__info">
+            <div class="c-show-card__name">Кошка на раскалённой крыше</div>
+            <div class="c-show-card__desc">Драма в двух действиях (18+) <br> Малахитовый зал</div>
+          </div>
+        </div>
+        <div class="c-media c-media_slide c-show-card">
+          <div class="o-two-side o-two-side_align-end c-media__top">
+            <div class="c-show-card__day">Завтра</div>
+            <div class="o-time">
+              <svg class="icon is-time o-time__icon">
+                <use xlink:href="#time" />
+              </svg><span class="o-time__hour">18</span>:<span class="o-time__min">00</span>
+            </div>
+          </div>
+          <div class="c-media__img c-show-card_label c-show-card_label-color_blue" data-label="Гастроли">
+            <img class="c-media__img__el c-show-card__img" src="https://unsplash.it/1124/473">
+          </div>
+          <div class="c-media__info c-show-card__info">
+            <div class="c-show-card__name">Клаустрофобия</div>
+            <div class="c-show-card__desc">Драма в двух действиях (18+) <br> Малахитовый зал</div>
+          </div>
+        </div>
+        <div class="c-media c-media_slide c-show-card">
+          <div class="o-two-side o-two-side_align-end c-media__top">
+            <div class="c-show-card__day">Завтра</div>
+            <div class="o-time">
+              <svg class="icon is-time o-time__icon">
+                <use xlink:href="#time" />
+              </svg><span class="o-time__hour">19</span>:<span class="o-time__min">00</span>
+            </div>
+          </div>
+          <div class="c-media__img c-show-card_label c-show-card_label-color_blue" data-label="Гастроли">
+            <img class="c-media__img__el c-show-card__img" src="https://unsplash.it/1125/473">
+          </div>
+          <div class="c-media__info c-show-card__info">
+            <div class="c-show-card__name">Кошка на раскалённой крыше</div>
+            <div class="c-show-card__desc">Драма в двух действиях (18+) <br> Малахитовый зал</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="c-calendar">
+        <div class="c-calendar__month">
+          В октябре
+          <svg class="icon is-next">
+            <use xlink:href="#next" />
+          </svg>
+        </div>
+        <div class="c-calendar__table">
+          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">26</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">27</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">28</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">29</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">30</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">1</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">2</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">3</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">4</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">5</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">6</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">7</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">8</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">9</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">10</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">11</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">12</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">13</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">14</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">15</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">16</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">17</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">18</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_active">19</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">20</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">21</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">22</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">23</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">24</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">25</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">26</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">27</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">28</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">29</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">30</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day">31</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">1</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">2</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">3</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">4</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">5</span></div>
+          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">6</span></div>
+        </div>
+        <div class="c-calendar__info">
+          <div class="o-two-side">
+            <div class="o-time">
+              <svg class="icon is-time o-time__icon">
+                <use xlink:href="#time" />
+              </svg><span class="o-time__hour">17</span>:<span class="o-time__min">00</span>
+            </div>
+            <div class="c-counter o-two-side">
+              <div class="js-show-arrow-prev c-slider-arrow_left">
+                <svg class="icon is-next">
+                  <use xlink:href="#next" />
+                </svg>
+              </div>
+              <div><span class="c-show-card__current-number js-show-card-counter">1</span><span class="muted">/3</span></div>
+              <div class="js-show-arrow-next c-slider-arrow_right">
+                <svg class="icon is-next">
+                  <use xlink:href="#next" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="c-calendar__event">Большая советсткая энциклопедия</div>
+          <div class="c-calendar__event-desc">
+            Драма в двух действиях (18+) <br>
+            19 октября, Гранатовый зал
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="e-button-link c-next-performance__button-link e-button-link_bordered e-button-link_center-block" href="#">Перейти к афише</a>
+</div>
+<div class="o-container c-news">
+  <div class="c-news__chairs"></div>
+  <div class="e-header e-header_size_big">Новости и события</div>
+  <div>
+    <div class="c-news__item">
+      <div class="c-news__date">5 октября</div>
+      <div class="c-news__info">
+        <a href="" class="c-news__name">ЦСД на Ленина, 97</a>
+        <div class="c-news__desc">
+          С 1 сентября Центр современной драматургии начнёт работу по адресупр. Ленина, 97. Ежедневно в Гранатовом зале "Коляда-Театра" свежие пьесы,смелые эксперименты, новые лица! Работу в новом здании ЦСД начнёмспектаклем "Бес небес".
+        </div>
+      </div>
+    </div>
+    <div class="c-news__item">
+      <div class="c-news__date">5 октября</div>
+      <div class="c-news__info">
+        <a href="" class="c-news__name">Новогодние колядки</a>
+        <div class="c-news__desc">
+          С 20 декабря по 10 января. "Сказка о Золотом Петушке", игровая программа. Билеты уже в продаже!
+        </div>
+      </div>
+    </div>
+    <div class="c-news__item">
+      <div class="c-news__date">9 сентября</div>
+      <div class="c-news__info">
+        <a href="" class="c-news__name">Гастроли "Коляда-Театра" в Москве</a>
+        <div class="c-news__desc">
+          Гастроли традиционно пройдут в январе на сцене Театрального центра СТД РФ «На Страстном», билеты уже сейчас можно приобрести в кассе центра nastrastnom.ru
+        </div>
+      </div>
+    </div>
+    <div class="c-news__item">
+      <div class="c-news__date">9 сентября</div>
+      <div class="c-news__info">
+        <a href="" class="c-news__name">ПРЕМЬЕРА! "Пиковая дама"</a>
+        <div class="c-news__desc">
+          4, 5 и 30 сентября в 19-00 в «Коляда-Театре» премьера! Спектакль по пьесе Николая Коляды «Пиковая дама», или «Dreisiebenass». Драматическаяфантазия в двух действиях по мотивам повести А. С. Пушкина«Пиковая дама».
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="e-button-link c-news__button-link e-button-link_bordered e-button-link_center-block" href="#">Архив новостей</a>
+</div>
+<div class="o-container-wide c-tour">
+  <div class="c-tour__holder">
+    <div class="c-tour__header">Виртуальный тур</div>
+    <a href="" class="e-button-link c-tour__link e-button-link_bordered e-button-link_center-block">Пройти</a>
+  </div>
+</div>
+<div class="o-container c-friends">
+  <div class="c-friends__slider">
+    <div class="js-slider-dots-friends c-slider-dots__wrapper"></div>
+    <div class="js-friend-slider">
+      <img src="../dist/img/friend.png" alt="">
+      <img src="../dist/img/friend.png" alt="">
+      <img src="../dist/img/friend.png" alt="">
+      <img src="../dist/img/friend.png" alt="">
+    </div>
+  </div>
+  <div class="c-friends__header">Клуб друзей</div>
+  <div class="c-friends__content">
+    <div class="c-friends__subtitle">
+      Присоединяйтесь к клубу друзей и посещайте наш театр на выгодных условиях!
+    </div>
+    <div class="c-friends__text">
+      Не следует, однако забывать, что реализация намеченных плановых заданий позволяетвыполнять важные задания по разработке форм развития. Идейные соображения высшегопорядка, а также новая модель организационной деятельности требуют определенияи уточнения позиций, занимаемых участниками в отношении поставленных задач.
+    </div>
+  </div>
+  <a href="" class="e-button-link c-friends__link e-button-link_bordered e-button-link_center-block">Подробнее</a>
+</div>
+<div class="o-container c-instagram-feed">
+  <div class="c-instagram-feed__blot"></div>
+  <div class="c-instagram-feed__header">Мы в Instagram</div>
+  <div class="c-instagram-feed__items o-grid o-grid__1of6 o-grid__gutter_two">
+    <div class="o-grid__cell">
+      <div class="c-instagram-feed__item" style="background-image: url(https://unsplash.it/300/300)"></div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="c-instagram-feed__item" style="background-image: url(https://unsplash.it/301/301)"></div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="c-instagram-feed__item" style="background-image: url(https://unsplash.it/302/302)"></div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="c-instagram-feed__item" style="background-image: url(https://unsplash.it/303/303)"></div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="c-instagram-feed__item" style="background-image: url(https://unsplash.it/304/304)"></div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="c-instagram-feed__item" style="background-image: url(https://unsplash.it/305/305)"></div>
+    </div>
+  </div>
+  <a href="" class="e-button-link c-instagram-feed__link e-button-link_bordered e-button-link_center-block">Показать ещё</a>
+</div>
+<div class="o-container-wide">
+  <div id="map" style="height:465px"></div>
+</div>
+{% endblock %}

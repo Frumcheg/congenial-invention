@@ -1,0 +1,233 @@
+{% extends "_layout.html" %}
+{% block title %}Афиша{% endblock %}
+{% block page %}
+<div class="o-container c-afisha">
+  <div class="c-afisha__blot"></div>
+  <div class="e-header c-afisha__header">Афиша</div>
+  <div class="c-line-calendar">
+    <div class="o-two-side">
+      <div class="c-line-calendar__month c-line-calendar__month_selected">Октябрь</div>
+      <div class="c-line-calendar__month">Ноябрь</div>
+      <a href="" class="c-line-calendar__link e-link">
+        <svg class="icon is-download">
+          <use xlink:href="#download" />
+        </svg>
+        Скачать афишу
+      </a>
+    </div>
+    <div class="c-line-calendar__days">
+      <div class="c-line-calendar__arrow c-line-calendar__arrow_left rotate-180 js-arrow-days-prev">
+        <svg class="icon is-next">
+          <use xlink:href="#next" />
+        </svg>
+      </div>
+      <div class="c-line-calendar__arrow c-line-calendar__arrow_right js-arrow-days-next">
+        <svg class="icon is-next">
+          <use xlink:href="#next" />
+        </svg>
+      </div>
+      <div class="js-days-slider">
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">1</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">2</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">3</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">4</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">5</span></div>
+        <div class="c-line-calendar__day is-selected"><span class="c-line-calendar__day-item">6</span></div>
+        <div class="c-line-calendar__day is-selected"><span class="c-line-calendar__day-item">7</span></div>
+        <div class="c-line-calendar__day is-selected"><span class="c-line-calendar__day-item">8</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">9</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">10</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">11</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">12</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">13</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">14</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">15</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">16</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">17</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">18</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">19</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">20</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">21</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">22</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">23</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">24</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">25</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">26</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">27</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">28</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">29</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">30</span></div>
+        <div class="c-line-calendar__day"><span class="c-line-calendar__day-item">31</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-schedule">
+    <div class="c-schedule__day">
+      <div class="c-schedule__date">
+        <span class="align-right">6 октября<br>четверг</span>
+      </div>
+      <div class="c-schedule__items">
+        <div class="c-schedule__item">
+          <div class="c-schedule__img c-schedule__img_label-color_blue" data-label="Премьера"><img src="https://unsplash.it/200/300" alt=""></div>
+          <div class="c-schedule__info">
+            <div class="c-schedule__time">
+              <div class="o-time">
+                <svg class="icon is-time o-time__icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#time"></use>
+                </svg>19:00</div>
+            </div>
+            <div class="c-schedule__author">Михаил Себастьян</div>
+            <div class="c-schedule__name">Кошка на раскаленной крыше</div>
+            <div class="c-schedule__text">Сентиментальная комедия в двух действияхдля детей старше 6-ти лет (6+)</div>
+            <div class="c-schedule__duration">2 часа 20 минут с антрактами</div>
+          </div>
+          <div class="c-schedule__buttons"><a href="" class="e-button-link e-button-link_bordered c-schedule__more-button">Подробнее</a><a href="" class="e-button-link c-schedule__buy-tickets">Купить билеты</a></div>
+        </div>
+        <div class="c-schedule__item">
+          <div class="c-schedule__img c-schedule__img_label-color_purple" data-label="Гастроли"><img src="https://unsplash.it/200/300" alt=""></div>
+          <div class="c-schedule__info">
+            <div class="c-schedule__time">
+              <div class="o-time">
+                <svg class="icon is-time o-time__icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#time"></use>
+                </svg>19:00</div>
+            </div>
+            <div class="c-schedule__author">Михаил Себастьян</div>
+            <div class="c-schedule__name">Кошка на раскаленной крыше</div>
+            <div class="c-schedule__text">Сентиментальная комедия в двух действияхдля детей старше 6-ти лет (6+)</div>
+            <div class="c-schedule__duration">2 часа 20 минут с антрактами</div>
+          </div>
+          <div class="c-schedule__buttons"><a href="" class="e-button-link e-button-link_bordered c-schedule__more-button">Подробнее</a><a href="" class="e-button-link c-schedule__buy-tickets">Купить билеты</a></div>
+        </div>
+        <div class="c-schedule__item">
+          <div class="c-schedule__img"><img src="https://unsplash.it/200/300" alt=""></div>
+          <div class="c-schedule__info">
+            <div class="c-schedule__time">
+              <div class="o-time">
+                <svg class="icon is-time o-time__icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#time"></use>
+                </svg>19:00</div>
+            </div>
+            <div class="c-schedule__author">Михаил Себастьян</div>
+            <div class="c-schedule__name">Кошка на раскаленной крыше</div>
+            <div class="c-schedule__text">Сентиментальная комедия в двух действияхдля детей старше 6-ти лет (6+)</div>
+            <div class="c-schedule__duration">2 часа 20 минут с антрактами</div>
+          </div>
+          <div class="c-schedule__buttons"><a href="" class="e-button-link e-button-link_bordered c-schedule__more-button">Подробнее</a><a href="" class="e-button-link c-schedule__buy-tickets">Купить билеты</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="c-schedule__day">
+      <div class="c-schedule__date">
+        <span class="align-right">7 октября<br>среда</span>
+      </div>
+      <div class="c-schedule__items">
+        <div class="c-schedule__item">
+          <div class="c-schedule__img"><img src="https://unsplash.it/200/300" alt=""></div>
+          <div class="c-schedule__info">
+            <div class="c-schedule__time">
+              <div class="o-time">
+                <svg class="icon is-time o-time__icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#time"></use>
+                </svg>19:00</div>
+            </div>
+            <div class="c-schedule__author">Михаил Себастьян</div>
+            <div class="c-schedule__name">Кошка на раскаленной крыше</div>
+            <div class="c-schedule__text">Сентиментальная комедия в двух действияхдля детей старше 6-ти лет (6+)</div>
+            <div class="c-schedule__duration">2 часа 20 минут с антрактами</div>
+          </div>
+          <div class="c-schedule__buttons"><a href="" class="e-button-link e-button-link_bordered c-schedule__more-button">Подробнее</a><a href="" class="e-button-link c-schedule__buy-tickets">Купить билеты</a></div>
+        </div>
+        <div class="c-schedule__item">
+          <div class="c-schedule__img"><img src="https://unsplash.it/200/300" alt=""></div>
+          <div class="c-schedule__info">
+            <div class="c-schedule__time">
+              <div class="o-time">
+                <svg class="icon is-time o-time__icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#time"></use>
+                </svg>19:00</div>
+            </div>
+            <div class="c-schedule__author">Михаил Себастьян</div>
+            <div class="c-schedule__name">Кошка на раскаленной крыше</div>
+            <div class="c-schedule__text">Сентиментальная комедия в двух действияхдля детей старше 6-ти лет (6+)</div>
+            <div class="c-schedule__duration">2 часа 20 минут с антрактами</div>
+          </div>
+          <div class="c-schedule__buttons"><a href="" class="e-button-link e-button-link_bordered c-schedule__more-button">Подробнее</a><a href="" class="e-button-link c-schedule__buy-tickets">Купить билеты</a></div>
+        </div>
+        <div class="c-schedule__item">
+          <div class="c-schedule__img"><img src="https://unsplash.it/200/300" alt=""></div>
+          <div class="c-schedule__info">
+            <div class="c-schedule__time">
+              <div class="o-time">
+                <svg class="icon is-time o-time__icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#time"></use>
+                </svg>19:00</div>
+            </div>
+            <div class="c-schedule__author">Михаил Себастьян</div>
+            <div class="c-schedule__name">Кошка на раскаленной крыше</div>
+            <div class="c-schedule__text">Сентиментальная комедия в двух действияхдля детей старше 6-ти лет (6+)</div>
+            <div class="c-schedule__duration">2 часа 20 минут с антрактами</div>
+          </div>
+          <div class="c-schedule__buttons"><a href="" class="e-button-link e-button-link_bordered c-schedule__more-button">Подробнее</a><a href="" class="e-button-link c-schedule__buy-tickets">Купить билеты</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="c-schedule__day">
+      <div class="c-schedule__date">
+        <span class="align-right">8 октября<br>пятница</span>
+      </div>
+      <div class="c-schedule__items">
+        <div class="c-schedule__item">
+          <div class="c-schedule__img"><img src="https://unsplash.it/200/300" alt=""></div>
+          <div class="c-schedule__info">
+            <div class="c-schedule__time">
+              <div class="o-time">
+                <svg class="icon is-time o-time__icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#time"></use>
+                </svg>19:00</div>
+            </div>
+            <div class="c-schedule__author">Михаил Себастьян</div>
+            <div class="c-schedule__name">Кошка на раскаленной крыше</div>
+            <div class="c-schedule__text">Сентиментальная комедия в двух действияхдля детей старше 6-ти лет (6+)</div>
+            <div class="c-schedule__duration">2 часа 20 минут с антрактами</div>
+          </div>
+          <div class="c-schedule__buttons"><a href="" class="e-button-link e-button-link_bordered c-schedule__more-button">Подробнее</a><a href="" class="e-button-link c-schedule__buy-tickets">Купить билеты</a></div>
+        </div>
+        <div class="c-schedule__item">
+          <div class="c-schedule__img"><img src="https://unsplash.it/200/300" alt=""></div>
+          <div class="c-schedule__info">
+            <div class="c-schedule__time">
+              <div class="o-time">
+                <svg class="icon is-time o-time__icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#time"></use>
+                </svg>19:00</div>
+            </div>
+            <div class="c-schedule__author">Михаил Себастьян</div>
+            <div class="c-schedule__name">Кошка на раскаленной крыше</div>
+            <div class="c-schedule__text">Сентиментальная комедия в двух действияхдля детей старше 6-ти лет (6+)</div>
+            <div class="c-schedule__duration">2 часа 20 минут с антрактами</div>
+          </div>
+          <div class="c-schedule__buttons"><a href="" class="e-button-link e-button-link_bordered c-schedule__more-button">Подробнее</a><a href="" class="e-button-link c-schedule__buy-tickets">Купить билеты</a></div>
+        </div>
+        <div class="c-schedule__item">
+          <div class="c-schedule__img"><img src="https://unsplash.it/200/300" alt=""></div>
+          <div class="c-schedule__info">
+            <div class="c-schedule__time">
+              <div class="o-time">
+                <svg class="icon is-time o-time__icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#time"></use>
+                </svg>19:00</div>
+            </div>
+            <div class="c-schedule__author">Михаил Себастьян</div>
+            <div class="c-schedule__name">Кошка на раскаленной крыше</div>
+            <div class="c-schedule__text">Сентиментальная комедия в двух действияхдля детей старше 6-ти лет (6+)</div>
+            <div class="c-schedule__duration">2 часа 20 минут с антрактами</div>
+          </div>
+          <div class="c-schedule__buttons"><a href="" class="e-button-link e-button-link_bordered c-schedule__more-button">Подробнее</a><a href="" class="e-button-link c-schedule__buy-tickets">Купить билеты</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

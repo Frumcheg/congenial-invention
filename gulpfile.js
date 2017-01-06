@@ -1,5 +1,6 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync').create();
+const nunjucks    = require('gulp-nunjucks');
 
 /* PostCSS Stuff */
 
@@ -22,16 +23,22 @@ const cssConfig = [
 
 /* End PostCSS Stuff */
 
-gulp.task('serve', ['styles'], () => {
+gulp.task('html', () =>
+  gulp.src('src/html/*.html')
+    .pipe(nunjucks.compile())
+    .pipe(gulp.dest('dist/pages'))
+)
+
+gulp.task('serve', ['styles', 'html'], () => {
 
   browserSync.init({
     server: {
-      baseDir: './'
+      baseDir: './dist/'
     }
   });
 
   gulp.watch('src/css/**/*.css', ['styles']);
-  gulp.watch('pages/*.html').on('change', browserSync.reload);
+  gulp.watch('dist/html/**/*.html', ['html-watch']);
 });
 
 gulp.task('styles', () =>
@@ -50,3 +57,8 @@ gulp.task('svg', () =>
     .pipe(svgstore())
     .pipe(gulp.dest('dist/img'))
 );
+
+gulp.task('html-watch', ['html'], function (done) {
+  browserSync.reload();
+  done();
+});
