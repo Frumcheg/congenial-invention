@@ -1,0 +1,39 @@
+.c-performance_background {
+  background: #000000 url("../img/p1.jpg") no-repeat;
+  background-size: cover;
+  min-height:475px;
+}
+
+.c-performance-title__name {
+  font-size: 65px;
+  line-height: 60px;
+  color: #ffffff;
+  font-family: 'AmericaXIX', serif;
+  padding-top: 300px;
+}
+
+.c-performance-title__producer {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  font-family: 'FiraSans', sans-serif;
+  padding-top: 20px;
+}
+
+.c-performance-title__bottom {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: 'FiraSansBook', sans-serif;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.c-performance-title__description {
+flex-grow: 1;
+}
+
+.c-performance-title__date {
+
+}
