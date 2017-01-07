@@ -70,3 +70,7 @@
 .c-all-actors-slider__arrow_left {
   right: 100%;
 }
+
+.c-all-actors-slider__arrow_right {
+  left: 100%;
+}
