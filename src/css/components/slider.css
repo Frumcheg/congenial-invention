@@ -180,9 +180,3 @@
     visibility: visible;
   }
 }
-
-.c-all-actors-slider__arrow {
-  svg {
-    fill: #000000;
-  }
-}

@@ -36,41 +36,6 @@
 @import './components/line-calendar.css';
 @import './components/schedule.css';
 @import './components/actor.css';
+@import './components/many-items-slider.css';
 
 @import './tools/utils.css';
-
-
-.c-all-actors-slider {
-  margin: 0 -11px;
-  padding: 13px 0 100px;
-}
-
-.c-all-actors-slider__slide-content {
-  display: inline-block;
-}
-
-.c-all-actors-slider__img {
-  margin: auto;
-}
-
-.c-all-actors-slider__text {
-  text-align: left;
-  line-height: 1.5;
-  padding-top: 1.5em;
-}
-
-.c-all-actors-slider__slide {
-  text-align: center;
-}
-
-.c-all-actors-slider__arrow {
-  top: -60px;
-}
-
-.c-all-actors-slider__arrow_left {
-  right: 100%;
-}
-
-.c-all-actors-slider__arrow_right {
-  left: 100%;
-}

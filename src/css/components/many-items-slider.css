@@ -1,0 +1,34 @@
+.с-many-items-slider {
+  margin: 0 -11px;
+  padding: 13px 0 100px;
+}
+
+.с-many-items-slider__slide-content {
+  display: inline-block;
+}
+
+.с-many-items-slider__img {
+  margin: auto;
+}
+
+.с-many-items-slider__text {
+  text-align: left;
+  line-height: 1.5;
+  padding-top: 1.5em;
+}
+
+.с-many-items-slider__slide {
+  text-align: center;
+}
+
+.с-many-items-slider__arrow {
+  top: -60px;
+}
+
+.с-many-items-slider__arrow_left {
+  right: 100%;
+}
+
+.с-many-items-slider__arrow_right {
+  left: 100%;
+}
