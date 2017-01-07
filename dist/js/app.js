@@ -97,7 +97,33 @@
         });
       });
 
+      init('.js-all-actors-slider', function($el) {
+        $el.slick({
+          prevArrow: '.js-arrow-actors-prev',
+          nextArrow: '.js-arrow-actors-next',
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: false
+        });
+      });
 
+      init('.js-actor-slider', function($slider) {
+        $slider.slick({
+          centerMode: true,
+          variableWidth: true,
+          prevArrow: '.js-arrow-prev',
+          nextArrow: '.js-arrow-next',
+          appendDots: '.js-slider-dots'
+        });
+
+        init('.js-actor-slider-nav', function($el) {
+          $el.find('[data-slide]').each(function(index, item) {
+            $(item).click(function(i) {
+              $slider.slick('slickGoTo',  $(item).data('slide'));
+            });
+          });
+        });
+      });
     })
   }
 })(window);

@@ -34,116 +34,42 @@
 @import './components/afisha.css';
 @import './components/line-calendar.css';
 @import './components/schedule.css';
+@import './components/actor.css';
 
 @import './tools/utils.css';
 
 
-.c-actor {
-  padding-top: 66px;
+.c-all-actors-slider {
+  margin: 0 -11px;
+  padding: 13px 0 100px;
 }
 
-.c-actor__photo {
-  float: right;
-  margin-left: 165px;
-}
-
-.c-actor__name {
-  font-size: 60px;
-  font-family: 'AmericaXIX', serif;
-  padding-bottom: 20px;
-}
-
-.c-actor__profession {
-  font-size: 24px;
-  font-style: italic;
-  font-weight: 100;
-  padding-bottom: 25px;
-}
-
-.c-actor__text {
-  color: #555555;
-  line-height: 1.625;
-  max-width: 730px;
-
-  p {
-    margin: 0;
-  }
-
-  p + p {
-    margin-top: 1.4em;
-  }
-}
-
-.c-actor__title {
-  font-family: 'AmericaXIX', serif;
-  font-size: 45px;
-  padding-top: 45px;
-  padding-bottom: 24px;
-}
-
-.c-actor__photo {
-  margin-top: 23px;
-}
-
-.c-actor__roles-links {
-  font-size: 20px;
-  font-family: 'AmericaXIX', serif;
-}
-
-.c-actor__roles-link {
+.c-all-actors-slider__slide-content {
   display: inline-block;
-  text-decoration: none;
-  border-bottom: dashed 2px #9a9a9a;
-  color: #9a9a9a;
-  line-height: 0.9;
-
-  &.is-active {
-    pointer-events: none;
-    border: none;
-    color: #0f0e15;
-  }
 }
 
-.c-actor__roles-table {
-  table-layout: fixed;
-  padding-top: 29px;
-  padding-bottom: 53px;
+.c-all-actors-slider__img {
+  margin: auto;
+}
 
-  td {
-    text-align: center;
-    vertical-align: top;
-    line-height: 1.625;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 13px;
-  }
+.c-all-actors-slider__text {
+  text-align: left;
+  line-height: 1.5;
+  padding-top: 1.5em;
+}
 
-  td:first-child {
-    max-width: 170px;
-    text-align: right;
-    padding-left: 0;
-    padding-right: 0;
-  }
+.c-all-actors-slider__slide {
+  text-align: center;
+}
 
-  td:last-child {
-    max-width: 170px;
-    text-align: left;
-    color: #555555;
-    font-weight: 100;
-    font-style: italic;
-    padding-left: 0;
-    padding-right: 0;
-  }
+.c-all-actors-slider__arrow {
+  top: -60px;
+}
 
-  a {
-    color: #e74e0f;
+.c-all-actors-slider__arrow_left {
+  right: 100%;
+}
 
-    &:before {
-      content: '«';
-    }
-
-    &:after {
-      content: '»';
-    }
-  }
+.c-all-actors-slider__arrow_right {
+  left: 100%;
 }

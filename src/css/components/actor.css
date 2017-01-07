@@ -1,0 +1,146 @@
+.c-actor {
+  padding-top: 66px;
+}
+
+.c-actor__photo {
+  position: relative;
+  float: right;
+  margin-left: 165px;
+
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 510px;
+    height: 423px;
+    background-image: url(../img/blot4.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+    right: -103px;
+    bottom: -154px;
+  }
+}
+
+.c-actor__name {
+  font-size: 60px;
+  font-family: 'AmericaXIX', serif;
+  padding-bottom: 20px;
+}
+
+.c-actor__profession {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 100;
+  padding-bottom: 25px;
+}
+
+.c-actor__text {
+  font-family: 'FiraSansBook', sans-serif;
+  color: #555555;
+  line-height: 1.625;
+  max-width: 730px;
+
+  p {
+    margin: 0;
+  }
+
+  p + p {
+    margin-top: 1.4em;
+  }
+}
+
+.c-actor__title {
+  font-family: 'AmericaXIX', serif;
+  font-size: 45px;
+  padding-top: 45px;
+  padding-bottom: 24px;
+}
+
+.c-actor__photo {
+  margin-top: 23px;
+}
+
+.c-actor__roles-links {
+  font-size: 20px;
+  font-family: 'AmericaXIX', serif;
+}
+
+.c-actor__roles-link {
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: dashed 2px #9a9a9a;
+  color: #9a9a9a;
+  line-height: 0.9;
+
+  &.is-active {
+    pointer-events: none;
+    border: none;
+    color: #0f0e15;
+  }
+}
+
+.c-actor__roles-table {
+  table-layout: fixed;
+  padding-top: 29px;
+  padding-bottom: 53px;
+
+  td {
+    text-align: center;
+    vertical-align: top;
+    line-height: 1.625;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 13px;
+  }
+
+  td:first-child {
+    max-width: 170px;
+    text-align: right;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  td:last-child {
+    max-width: 170px;
+    text-align: left;
+    color: #555555;
+    font-weight: 100;
+    font-style: italic;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  a {
+    color: #e74e0f;
+
+    &:before {
+      content: '«';
+    }
+
+    &:after {
+      content: '»';
+    }
+  }
+}
+
+.c-photo-previews {
+  padding-top: 10px;
+  letter-spacing: 0.4em;
+}
+
+.c-photo-previews__item {
+  display: inline-flex;
+  vertical-align: top;
+  background-color: #000000;
+  width: 115px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+
+  img {
+    max-width: 115px;
+    max-height: 60px;
+  }
+}

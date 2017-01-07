@@ -15,6 +15,11 @@
   height: 70px;
 }
 
+@mixin icon next2-black, #000000 {
+  width: 70px;
+  height: 70px;
+}
+
 @mixin icon time, #7B7B7B {
   stroke: #7B7B7B;
 }
