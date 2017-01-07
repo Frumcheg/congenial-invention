@@ -22,3 +22,9 @@
   display: inline-block;
   text-align: right;
 }
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}

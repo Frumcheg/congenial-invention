@@ -18,3 +18,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'FiraSansLightItalic';
+  font-path: '../fonts/FiraSans-LightItalic';
+  font-weight: normal;
+  font-style: normal;
+}
