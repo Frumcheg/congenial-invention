@@ -4,7 +4,7 @@
   var init = function(selector, cb) {
     var $el = $(selector);
     if ($el.length > 0) {
-      cb($el);
+      typeof cb === 'function' && cb($el);
       return $el;
     }
   }
@@ -59,20 +59,15 @@
           fade: true,
           dots: true,
           appendDots: '.js-slider-dots-friends',
-          dotsClass: 'c-slider-dots',
+          dotsClass: 'c-slider-dots'
         });
       });
 
       init('.js-filter-collapsed', function($el) {
-        $el.on( "click", function() {
-          init('.c-filter__content', function ($el1){
-            if ($el.is(':checked')){
-              $el1.addClass("c-filter__content_visible");
-            } else {
-              $el1.removeClass("c-filter__content_visible");
-            }
-          })
-        } );
+        var $content = init('.c-filter__content');
+        $el.on( 'click', function() {
+          $content.toggleClass('c-filter__content_visible', $el.is(':checked'));
+        });
       });
 
       init('#map', function($el) {
@@ -104,6 +99,26 @@
           slidesToShow: 6,
           slidesToScroll: 1,
           infinite: false
+        });
+      });
+
+      init('.js-all-perfomances-slider', function($el) {
+        $el.slick({
+          prevArrow: '.js-arrow-perf-prev',
+          nextArrow: '.js-arrow-perf-next',
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: false
+        });
+      });
+
+      init('.js-perfomnace-schedule-slider', function($el) {
+        $el.slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true,
+          dotsClass: 'c-slider-dots'
         });
       });
 

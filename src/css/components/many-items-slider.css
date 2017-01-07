@@ -32,3 +32,9 @@
 .с-many-items-slider__arrow_right {
   left: 100%;
 }
+
+.с-many-items-slider_perfomances {
+  .с-many-items-slider__arrow {
+    top: -130px;
+  }
+}
