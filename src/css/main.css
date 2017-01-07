@@ -27,6 +27,7 @@
 @import './components/tour.css';
 @import './components/troupe.css';
 @import './components/performances.css';
+@import './components/performance.css';
 @import './components/friends.css';
 @import './components/instagram-feed.css';
 @import './components/socials.css';
@@ -70,6 +71,8 @@
   right: 100%;
 }
 
+<<<<<<< HEAD
 .c-all-actors-slider__arrow_right {
   left: 100%;
 }
+======= performance
