@@ -39,7 +39,8 @@ gulp.task('serve', ['clean', 'styles', 'html'], () => {
   });
 
   gulp.watch('src/css/**/*.css', ['styles']);
-  gulp.watch('dist/html/**/*.html', ['html-watch']);
+  gulp.watch('src/html/**/*.html', ['html']);
+  gulp.watch('dist/pages/**/*.html', ['reload']);
 });
 
 gulp.task('styles', () =>
@@ -59,7 +60,7 @@ gulp.task('svg', () =>
     .pipe(gulp.dest('dist/img'))
 );
 
-gulp.task('html-watch', ['html'], function (done) {
+gulp.task('reload', done => {
   browserSync.reload();
   done();
 });
