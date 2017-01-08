@@ -2245,8 +2245,8 @@ body {
 }
 
 .c-schedule__buttons {
-  -ms-flex-preferred-size: 0;
-      flex-basis: 0;
+  -ms-flex-preferred-size: 172px;
+      flex-basis: 172px;
 }
 
 .c-schedule__duration {
@@ -2264,7 +2264,6 @@ body {
   width: 172px;
   box-sizing: border-box;
   text-align: center;
-  background-color: #e74e0f;
   color: #ffffff;
 }
 
