@@ -1,7 +1,22 @@
 .c-performance_background {
-  background: #000000 url("../img/p1.jpg") no-repeat;
+  background: #000000 url(../img/p1.jpg) no-repeat;
   background-size: cover;
-  min-height:475px;
+  min-height: 475px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80%;
+    background-image: linear-gradient(to top, #090909 0%, rgba(9, 9, 9, 0) 100%);
+  }
+}
+
+.c-performance-title {
+  position: relative;
 }
 
 .c-performance-title__name {
@@ -31,12 +46,11 @@
 }
 
 .c-performance-title__description {
-flex-grow: 1;
+  flex-grow: 1;
 }
 
 .c-performance__about {
-  background: transparent url("../img/blot5.png") no-repeat right top 10px;
-
+  background: transparent url(../img/blot5.png) no-repeat right top 10px;
 }
 
 .c-performance-about__photo {
