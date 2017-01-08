@@ -1,3 +1,18 @@
+.e-link_black {
+  &,&:visited {
+    color: #0f0e15;
+  }
+}
+
 .e-link {
+  text-decoration: none;
+
+  &:hover {
+    color: #e74e0f;
+  }
+}
+
+.e-link_block {
+  display: block;
   text-decoration: none;
 }

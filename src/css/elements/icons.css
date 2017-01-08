@@ -28,27 +28,27 @@
   cursor: pointer;
 }
 
-@mixin icon vk, #ffffff {
+@mixin icon vk, currentColor {
   width: 30px;
   height: 18px;
 }
 
-@mixin icon insta, #ffffff {
+@mixin icon insta, currentColor {
   width: 23px;
   height: 23px;
 }
 
-@mixin icon facebook, #ffffff {
+@mixin icon facebook, currentColor {
   width: 13px;
   height: 25px;
 }
 
-@mixin icon twitter, #ffffff {
+@mixin icon twitter, currentColor {
   width: 27px;
   height: 23px;
 }
 
-@mixin icon lj, #ffffff {
+@mixin icon lj, currentColor {
   width: 28px;
   height: 34px;
 }

@@ -10,6 +10,12 @@
   width: 56px;
   height: 56px;
   position: relative;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
 
 .c-socials__icon {

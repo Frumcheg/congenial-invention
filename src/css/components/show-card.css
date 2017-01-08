@@ -1,6 +1,37 @@
 .c-show-card {
   position: relative;
   outline-width: 0;
+
+  &:before {
+    content: '';
+    box-shadow: 0px 1px 25.6px 6.4px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    top: 38px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+  }
+
+  &:hover {
+    &:before {
+      visibility: visible;
+    }
+
+    .c-show-card__name {
+      color: #e74e0f;
+    }
+
+    .c-show-card__overlay {
+      &:after {
+        bottom: 0;
+      }
+    }
+
+    .c-show-card__buttons {
+      opacity: 1;
+    }
+  }
 }
 
 .c-show-card__name {
@@ -45,6 +76,7 @@
     color: #ffffff;
     line-height: 1.667;
     padding: 0 5px;
+    z-index: 1;
   }
 }
 
@@ -63,4 +95,42 @@
 .c-show-card__day {
   font-family: 'AmericaXIX', serif;
   font-size: 20px;
+}
+
+.c-show-card_in-slider {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+
+  &:before {
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+.c-show-card__overlay {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.79);
+    transition: bottom 300ms ease;
+  }
+}
+
+.c-show-card__buttons {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 300ms ease 150ms;
+  padding: 22px;
 }

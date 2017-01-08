@@ -49,6 +49,16 @@
   bottom: 0;
   height: 70px;
   cursor: pointer;
+
+  &:hover {
+    svg {
+      transform: translateX(10px);
+    }
+  }
+
+  svg {
+    transition: transform 300ms ease;
+  }
 }
 
 

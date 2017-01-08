@@ -39,9 +39,14 @@
 
 .c-calendar__day_active {
   color: #fff;
-  pointer-events: none;
 
-  &::before {
+  &:hover {
+    &:after {
+      visibility: visible;
+    }
+  }
+
+  &:before {
     content: '';
     position: absolute;
     width: 33px;
@@ -51,6 +56,21 @@
     z-index: -1;
     top: -50%;
     left: -50%;
+  }
+
+  &:after {
+    content: attr(data-text);
+    font-size: 12px;
+    padding: 10px 13px 9px 13px;
+    position: absolute;
+    bottom: 20px;
+    left: -7px;
+    background-color: #e74e0f;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.32);
+    color: #ffffff;
+    max-width: 150px;
+    white-space: nowrap;
+    visibility: hidden;
   }
 }
 

@@ -25,6 +25,10 @@
 
 .clearfix::after {
   display: table;
-  content: "";
+  content: '';
   clear: both;
+}
+
+.align-middle {
+  vertical-align: -0.2em;
 }

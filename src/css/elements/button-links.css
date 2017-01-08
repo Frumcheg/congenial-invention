@@ -9,11 +9,30 @@
 .e-button-link_orange {
   color: #FFFFFF;
   background-color: #E74E0F;
+
+  &:hover {
+    background-color: #c53c03;
+  }
 }
 
 .e-button-link_bordered {
   border: solid 2px #0f0e15;
   color: #0f0e15;
+
+  &:hover {
+    background-color: #0f0e15;
+    color: #ffffff;
+  }
+}
+
+.e-button-link_bordered_white {
+  border: solid 2px #ffffff;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
 
 .e-button-link_center-block {

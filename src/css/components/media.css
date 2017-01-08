@@ -15,3 +15,16 @@
   width: 100%;
   height: auto;
 }
+
+.c-media_hover-block {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 38px;
+    top: 0;
+  }
+}

@@ -28,3 +28,8 @@
 .c-counter {
   width: 80px;
 }
+
+.c-next-show-slider {
+  margin-left: -20px;
+  margin-right: -20px;
+}
