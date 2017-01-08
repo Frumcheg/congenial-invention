@@ -504,6 +504,17 @@ template {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'FiraSansBookItalic';
+  src: url("../fonts/FiraSans-BookItalic.eot");
+  src: url("../fonts/FiraSans-BookItalic.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/FiraSans-BookItalic.woff") format('woff'),
+       url("../fonts/FiraSans-BookItalic.ttf") format('truetype'),
+       url("../fonts/FiraSans-BookItalic.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -1846,6 +1857,119 @@ body {
 
 .c-performance-producer-link:hover {
   border-bottom: 1px solid #e74e0f;
+}
+
+.c-performance_center-text {
+  text-align: center;
+}
+
+.c-performance__all-photo {
+  font-size: 16px;
+  line-height: 20px;
+  color: #555555;
+  font-family: 'FiraSansBook', sans-serif;
+  padding: 10px 60px 10px 20px;
+  display: inline-block;
+  margin-top: 44px;
+  position: relative;
+}
+
+.c-performance__all-photo::before, .c-performance__all-photo::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  right: 17px;
+}
+
+.c-performance__all-photo::before {
+  background-color: #025fdf;
+}
+
+.c-performance__all-photo::after {
+  background-color: #ff0080;
+  right: 37px;
+}
+
+.c-performance-honors__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #818181;
+  font-family: 'FiraSansBook', sans-serif;
+  max-width: 720px;
+}
+
+.c-performance-honors__list li {
+  padding-left: 11px;
+  padding-bottom: 28px;
+  position: relative;
+}
+
+.c-performance-honors__list li:last-child {
+  padding-bottom: 0;
+}
+
+.c-performance-honors__list li::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+  background-color: #818181;
+  left: 5px;
+  top: 8px;
+}
+
+.c-performance-press blockquote {
+  font-size: 16px;
+  line-height: 26px;
+  color: #555555;
+  font-family: 'FiraSansBookItalic', sans-serif;
+  margin: 0;
+  margin-left: 145px;
+  text-indent: -46px;
+}
+
+.c-performance-press blockquote::before,
+.c-performance-press blockquote::after {
+  position: relative;
+  display: inline-block;
+  font-size: 165px;
+  line-height: 26px;
+  color: #cdcdcd;
+  font-family: 'AmericaXIX', serif;
+  z-index: -1;
+  vertical-align: bottom;
+}
+
+.c-performance-press blockquote::before {
+  content: "„";
+  top: -45px;
+  left: 22px;
+}
+
+.c-performance-press blockquote::after {
+  content: "“";
+  right: -20px;
+  bottom: -45px;
+}
+
+.c-performance-press cite {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  color: #555555;
+  font-family: 'AmericaXIX', serif;
+  margin: 32px 0 70px;
+  display: block;
+}
+
+.c-performance-press cite:last-child {
+  margin-bottom: 0;
 }
 
 .c-friends {
