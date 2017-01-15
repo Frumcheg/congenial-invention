@@ -1,13 +1,16 @@
 .c-news {
   padding-bottom: 69px;
+  position: relative;
 }
 
 .c-news__chairs {
-  background: url(../img/chairs.png) -48px -145px no-repeat;
+  background: url(../img/chairs.png) 0px -139px no-repeat;
   position: absolute;
-  width: 511px;
-  height: 778px;
+  width: 560px;
+  height: 1060px;
   right: 0;
+  top: -88px;
+  z-index: -1;
 }
 
 .c-news__item {
@@ -22,10 +25,12 @@
   color: #7b7b7b;
   font-family: 'AmericaXIX', serif;
   margin-top: -1px;
+  text-align: right;
+  width: 130px;
 }
 
 .c-news__info {
-  margin-left: 140px;
+  margin-left: 159px;
 }
 
 .c-news__name {
