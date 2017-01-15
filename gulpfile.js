@@ -1,7 +1,9 @@
-const gulp        = require('gulp');
-const browserSync = require('browser-sync').create();
-const nunjucks    = require('gulp-nunjucks');
-const del         = require('del');
+const gulp         = require('gulp');
+const browserSync  = require('browser-sync').create();
+const nunjucks     = require('gulp-nunjucks');
+const del          = require('del');
+const sourcemaps   = require('gulp-sourcemaps');
+const openInEditor = require('open-in-editor');
 
 /* PostCSS Stuff */
 
@@ -24,6 +26,12 @@ const cssConfig = [
 
 /* End PostCSS Stuff */
 
+const editor = openInEditor.configure({
+  editor: 'code'
+}, err => {
+  console.error(`Something went wrong: ${err}`);
+});
+
 gulp.task('html', () =>
   gulp.src('src/html/[^_]*.html')
     .pipe(nunjucks.compile())
@@ -35,7 +43,20 @@ gulp.task('serve', ['clean', 'styles', 'html'], () => {
   browserSync.init({
     server: {
       baseDir: './dist/'
-    }
+    },
+    middleware: [
+      {
+        route: '/edit',
+        handle: (req, res, next) => {
+          editor.open('./src/css/main.css:1:1')
+            .then(() => {
+              console.log('Opened');
+            }, err => {
+              console.error(`Something went wrong: ${err}`);
+            });
+        }
+      }
+    ]
   });
 
   gulp.watch('src/css/**/*.css', ['styles']);
@@ -45,10 +66,12 @@ gulp.task('serve', ['clean', 'styles', 'html'], () => {
 
 gulp.task('styles', () =>
     gulp.src('src/css/main.css')
+      .pipe(sourcemaps.init())
       .pipe(postcss(cssConfig))
       .pipe(rucksack({
         autoprefixer: true
       }))
+      .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest('dist/css'))
       .pipe(browserSync.stream())
 );

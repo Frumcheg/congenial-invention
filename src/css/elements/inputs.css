@@ -6,7 +6,7 @@
 
 .e-search-input {
   position: relative;
-  max-height: 28px;
+  max-height: 37px;
 }
 
 .e-search-input__el {
@@ -14,8 +14,8 @@
   background-color: #444444;
   color: #9a9a9a;
   font-size: 14px;
-  padding: 6px 35px 6px 17px;
-  max-height: 28px;
+  padding: 11px 35px 10px 17px;
+  max-height: 37px;
 }
 
 .e-search-input__button {

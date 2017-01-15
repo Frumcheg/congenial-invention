@@ -17,7 +17,7 @@
 }
 
 .c-friends__content {
-  max-width: 700px;
+  max-width: 750px;
   margin-bottom: 40px;
 }
 
@@ -28,6 +28,7 @@
 
 .c-friends__text {
   color: #555555;
+  line-height: 1.25;
 }
 
 .c-friends__link {

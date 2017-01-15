@@ -134,3 +134,8 @@
   transition: opacity 300ms ease 150ms;
   padding: 22px;
 }
+
+.c-show-card__button-more {
+  padding-right: 26px;
+  padding-left: 26px;
+}
