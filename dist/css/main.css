@@ -836,6 +836,10 @@ body {
   cursor: pointer;
   padding: 12px 19px 8px 19px;
   vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .e-button-link_orange {
