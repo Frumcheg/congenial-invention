@@ -37,6 +37,11 @@
   max-width: 16.6667%;
 }
 
+.o-grid__1of2 > .o-grid__cell {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .o-grid__1of4 > .o-grid__cell {
   flex: 0 0 25%;
   max-width: 25%;

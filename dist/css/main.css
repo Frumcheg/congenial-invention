@@ -640,6 +640,13 @@ body {
   max-width: 16.6667%;
 }
 
+.o-grid__1of2 > .o-grid__cell {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .o-grid__1of4 > .o-grid__cell {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
@@ -2568,6 +2575,104 @@ body {
   max-height: 60px;
 }
 
+.c-contacts__title {
+  font-size: 60px;
+  line-height: 72px;
+  color: #000000;
+  font-family: 'AmericaXIX', serif;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.c-contacts__firm {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  font-family: 'FiraSans', sans-serif;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.c-contacts__title {
+  font-size: 45px;
+  line-height: 55px;
+  color: #000000;
+  font-family: 'AmericaXIX', serif;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.c-contacts__small-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+  font-family: 'FiraSansBook', sans-serif;
+  margin-bottom: 10px;
+}
+
+.c-contracts__mail-link {
+  text-decoration: underline;;
+  font-size: 16px;
+  line-height: 20px;
+  color: #e84e10;
+  font-family: 'FiraSansBook', sans-serif;
+}
+
+.c-contracts__mail-link:hover {
+  text-decoration: none;
+}
+
+.c-contracts__item {
+  width: 480px;
+  min-height: 245px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-contracts-item__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0;
+          flex: 0 0;
+}
+
+.c-contracts-item__img img {
+  width: 165px;
+  height: 245px;
+}
+
+.c-contracts-item__info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+  padding-left: 30px;
+  padding-right: 60px;
+}
+
+.c-contracts-item__name {
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  font-family: 'AmericaXIX', serif;
+  padding-bottom: 15px;
+}
+
 .с-many-items-slider {
   margin: 0 -11px;
   padding: 13px 0 100px;
@@ -2665,4 +2770,5 @@ body {
   color: #fffffe;
   padding: 15px 10px 9px;
 }
+
 /*# sourceMappingURL=main.css.map */
