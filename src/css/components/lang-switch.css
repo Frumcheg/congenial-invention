@@ -1,0 +1,22 @@
+.c-lang-switch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0;
+}
+
+.c-lang-switch__link {
+  text-decoration: none;
+  background-color: #444444;
+
+  &:hover {
+    color: #e74e0f;
+  }
+}
+
+.c-lang-switch__item {
+  display: inline-block;
+  font-size: 14px;
+  color: #fffffe;
+  padding: 15px 10px 9px;
+}

@@ -5,6 +5,7 @@
   padding: 12px 19px 8px 19px;
   vertical-align: middle;
   user-select: none;
+  line-height: normal;
 }
 
 .e-button-link_orange {
@@ -33,6 +34,16 @@
   &:hover {
     background-color: #ffffff;
     color: #000000;
+  }
+}
+
+.e-button-link_bordered_orange {
+  border-color: #E74E0F;
+  color: #E74E0F;
+
+  &:hover {
+    background-color: #E74E0F;
+    color: #FFFFFF;
   }
 }
 
