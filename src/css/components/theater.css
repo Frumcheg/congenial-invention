@@ -1,4 +1,30 @@
-
+.c-theater-tour__name {
+  font-family: 'AmericaXIX', serif;
+  font-size: 65px;
+  line-height: 65px;
+  color: #ffffff;
+  padding: 290px 0 20px;
+}
+.c-theater-tour__links {
+  display: flex;
+}
+.c-theater-tour__link {
+  font-family: 'AmericaXIX', serif;
+  font-size: 20px;
+  line-height: 40px;
+  color: #7b7b7b;
+  text-decoration: underline;
+  margin-right: 35px;
+}
+.c-theater-tour-link_selected {
+  color: #ffffff;
+  text-decoration: none;
+}
+.c-theater__right-tour-link {
+  width: 240px;
+  padding: 12px 0;
+  margin-right: 0;
+}
 .c-theater__header {
   font-family: 'AmericaXIX', serif;
   font-size: 45px;
