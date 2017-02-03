@@ -37,6 +37,8 @@
 @import './components/schedule.css';
 @import './components/actor.css';
 @import './components/contacts.css';
+@import './components/theater.css';
+@import './components/kolyada.css';
 @import './components/many-items-slider.css';
 @import './components/lang-switch.css';
 

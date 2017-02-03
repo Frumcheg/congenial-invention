@@ -2688,6 +2688,113 @@ body {
   padding-bottom: 15px;
 }
 
+.c-theater__header {
+  font-family: 'AmericaXIX', serif;
+  font-size: 45px;
+  line-height: 60px;
+  color: #000000;
+  margin: 55px 0 25px;
+}
+
+.c-theater__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-theater__years {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 145px;
+}
+
+.c-theater__years div {
+  margin-bottom: 33px;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.c-theater__years-link {
+  font-family: 'AmericaXIX', serif;
+  font-size: 20px;
+  line-height: 34px;
+  color: #7b7b7b;
+  border-bottom: 2px dotted #7b7b7b;
+  text-decoration: none;
+}
+
+.c-theater__years-link_selected {
+  color: #000000;
+  border-bottom: none;
+}
+
+.c-theater__history {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  margin-right: 30px;
+}
+
+.c-theater__history p {
+  margin: 0;
+  margin-top: 6px;
+  margin-bottom: 25px;
+  font-family: 'FiraSansBook', sans-serif;
+  color: #555555;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c-theater__tour {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 355px;
+  height: 330px;
+  background: #000000 url(../img/kolada.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.c-theater__tour-name {
+  font-family: 'AmericaXIX', serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  padding: 87px 40px 21px;
+  text-align: center;
+}
+
+.c-theater__tour-link {
+  font-family: 'FiraSansBook', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 12px 0;
+  width: 115px;
+  padding: 10px 0;
+}
+
+.c-theater-slider {
+  margin-top: 25px;
+}
+
+.c-theater-photo-previews {
+  padding-bottom: 70px;
+}
+
+.c-kolyada__header {
+  font-family: 'AmericaXIX', serif;
+  font-size: 45px;
+  color: #ffffff;
+  margin-bottom: 34px;
+}
+
 .с-many-items-slider {
   margin: 0 -11px;
   padding: 13px 0 100px;
@@ -2990,4 +3097,5 @@ body {
   border-radius: 2px;
   cursor: pointer;
 }
+
 /*# sourceMappingURL=main.css.map */
