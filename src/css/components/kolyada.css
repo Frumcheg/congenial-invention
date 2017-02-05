@@ -1,7 +1,152 @@
+.c-kolyada-top {
+  min-height: 475px;
+  background: #000000 url(../img/n_kolyada.jpg) 50% 100% no-repeat;
+}
+.c-kolyada__title {
+  font-family: 'AmericaXIX', serif;
+  font-size: 65px;
+  line-height: 60px;
+  color: #ffffff;
+  padding: 295px 0 35px;
+}
+.c-kolyada__link {
+  padding: 12px 20px;
+  margin-right: 50px;
+}
+.c-kolyada__link-external {
+  font-family: 'FiraSansBook', sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.c-kolyada__link-external span {
+  border-bottom: 1px solid #ffffff;
+}
+
+.c-kolyada {
+  padding-right: 35%;
+  padding-bottom: 80px;
+}
+
+.c-kolyada .c-kolyada-about_title {
+  font-family: 'FiraSansLightItalic', sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  color: #000000;
+  margin-top: 55px;
+  margin-bottom: 35px;
+}
+
+.c-kolyada p {
+  margin: 30px 0;
+  font-family: 'FiraSansBook', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c-kolyada  strong {
+  font-family: 'FiraSansSemiBold', sans-serif;
+  font-weight: normal;
+  color: #555555;
+}
+
+.c-kolyada  a:hover {
+  border: none;
+}
+
+.c-kolyada-about__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-kolyada-about__list li {
+  padding-left: 35px;
+  position: relative;
+  line-height: 26px;
+}
+
+.c-kolyada-about__list li::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #e74e0f;
+}
 
 .c-kolyada__header {
   font-family: 'AmericaXIX', serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  margin-top: 65px;
+  margin-bottom: 30px;
+}
+
+.c-kolyada-order_invisible {
+  display: none;
+}
+.c-kolyada-order__link {
+  color: #e74e0f;
+  text-decoration: none;
+  border-bottom: 1px solid #e74e0f;
+}
+.c-kolyada-order .c-kolyada-order__link-return {
+  display: block;
+  font-family: 'FiraSans', sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  color: #000000;
+  text-decoration: none;
+  border: none;
+  padding-top: 70px;
+}
+.c-kolyada-order__title {
+  font-family: 'AmericaXIX', serif;
   font-size: 45px;
-  color: #ffffff;
-  margin-bottom: 34px;
+  line-height: 60px;
+  color: #000000;
+  padding: 45px 0 25px;
+}
+.c-kolyada-order__form {
+  width: 595px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.c-kolyada-order-form__link {
+  padding: 12px 30px;
+}
+.c-kolyada-order-form__title {
+
+}
+
+.c-kolyada-order-form__col1 {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.c-kolyada-order-form__col2 {
+  width: 48%;
+  box-sizing: border-box;
+}
+
+.c-kolyada-order__form input, .c-kolyada-order__form textarea {
+  margin-bottom: 13px;
+  padding: 17px;
+  border: none;
+  box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.c-kolyada-order__form input {
+  height: 44px;
+}
+
+.c-kolyada-order__form textarea {
+  resize: none;
 }

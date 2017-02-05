@@ -32,3 +32,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'FiraSansSemiBold';
+  font-path: '../fonts/FiraSans-SemiBold';
+  font-weight: normal;
+  font-style: normal;
+}

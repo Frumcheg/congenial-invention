@@ -58,3 +58,15 @@
   height: 18px;
   vertical-align: middle;
 }
+
+@mixin icon external, #555555 {
+  width: 19px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+@mixin icon return, #555555 {
+  width: 19px;
+  height: 18px;
+  vertical-align: middle;
+}
