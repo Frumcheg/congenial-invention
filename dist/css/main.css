@@ -1735,12 +1735,16 @@ body {
   min-height: 365px;
   padding-left: 30px;
   margin-bottom: 40px;
+  color: #555555;
+  font-family: 'FiraSansBook', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .c-performances-item__img {
   width: 260px;
   height: 365px;
-  box-shadow: 4px 6px 6px rgba(0,0,0,0.24);
+  box-shadow: 0 5px 20px -3px rgba(0, 0, 0, 0.2);
 }
 
 .c-performances-archive__img {
@@ -1756,16 +1760,7 @@ body {
   height: 365px;
 }
 
-.c-performances-item__description {
-  color: #555555;
-  font-family: 'FiraSansBook', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.c-performances-item__name {
-  display: block;
-  padding-top: 20px;
+.c-performances-item__link {
   color: #0f0e15;
   font-family: 'FiraSansBook', sans-serif;
   font-size: 16px;
@@ -1773,8 +1768,16 @@ body {
   text-decoration: none;
 }
 
-.c-performances-item__name:hover {
-  text-decoration: underline;
+.c-performances-item__link:hover {
+  color: #e74e0f;
+}
+
+.c-performances-item__link:hover .c-show-card__overlay:after {
+  bottom: 0;
+}
+
+.c-performances-item__name {
+  padding-top: 20px;
 }
 
 .c-performance_background {
