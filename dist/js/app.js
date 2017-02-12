@@ -39,8 +39,8 @@
       });
 
       init('.js-show-card-slider', function($el) {
-        $el.on('afterChange', function(slick, data) {
-          counter.setValue(data.currentSlide + 1);
+        $el.on('beforeChange', function(slick, data) {
+          counter.setValue(data.currentSlide + 2);
         });
 
         $el.slick({

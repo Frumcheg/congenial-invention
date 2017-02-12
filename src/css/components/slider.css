@@ -52,12 +52,12 @@
 
   &:hover {
     svg {
-      transform: translateX(10px);
+      fill: #E74E0F !important;
     }
   }
 
   svg {
-    transition: transform 300ms ease;
+    transition: fill 300ms ease;
   }
 }
 
@@ -84,6 +84,7 @@
     border-radius: 50%;
     font-size: 0;
     cursor: pointer;
+    outline-width: 0;
   }
 
   .slick-active button {
@@ -123,7 +124,7 @@
     background-color: rgba(13, 13, 14, 0.7);
 
     .c-slider-info__desc {
-      max-height: 10.5em;
+      max-height: 11em;
       opacity: 1;
       transition: max-height 0.3s ease, opacity 1s ease;
     }
@@ -150,7 +151,7 @@
   opacity: 0;
   overflow: hidden;
   color: #ffffff;
-  line-height: 1.5;
+  line-height: 1.625;
 }
 
 .c-slider-info.is-hover {

@@ -24,11 +24,13 @@
 
     .c-show-card__overlay {
       &:after {
-        bottom: 0;
+        visibility: visible;
+        background-color: rgba(0, 0, 0, 0.79);
       }
     }
 
     .c-show-card__buttons {
+      transform: scale(1);
       opacity: 1;
     }
   }
@@ -115,12 +117,13 @@
   &:after {
     content: '';
     position: absolute;
+    visibility: hidden;
     top: 0;
-    bottom: 100%;
+    bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.79);
-    transition: bottom 300ms ease;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 300ms ease;
   }
 }
 
@@ -131,7 +134,8 @@
   left: 0;
   right: 0;
   opacity: 0;
-  transition: opacity 300ms ease 150ms;
+  transform: scale(0);
+  transition: opacity 300ms ease, transform 300ms ease;
   padding: 22px;
 }
 

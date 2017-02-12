@@ -80,6 +80,7 @@
 }
 
 .c-performance-about__content p {
+  line-height: 1.625;
   padding: 0;
   margin: 0;
 }
@@ -191,7 +192,7 @@
   padding: 0;
   list-style: none;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.625;
   color: #818181;
   font-family: 'FiraSansBook', sans-serif;
   max-width: 720px;

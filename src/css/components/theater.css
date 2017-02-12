@@ -23,6 +23,9 @@
 .c-theater__right-tour-link {
   padding: 12px 20px;
   margin-right: 0;
+  margin-left: auto;
+  max-height: 47px;
+  white-space: nowrap;
 }
 .c-theater__header {
   font-family: 'AmericaXIX', serif;
