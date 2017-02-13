@@ -2459,13 +2459,15 @@ body {
   color: #555555;
   max-width: 350px;
   line-height: 1.625;
-  padding-bottom: 19px;
+  padding-bottom: 15px;
 }
 
 .c-schedule__buttons {
   -ms-flex-preferred-size: 172px;
       flex-basis: 172px;
-  padding-top: 73px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .c-schedule__duration {
