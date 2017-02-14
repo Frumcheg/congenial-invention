@@ -2,6 +2,7 @@
     .icon.is-$(name) {
         fill: $color;
         @mixin-content;
+        transition: fill 300ms ease;
     }
     .icon.is-$(name):hover {
         fill: $color;

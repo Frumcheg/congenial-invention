@@ -26,6 +26,10 @@
 
 @mixin icon next, #0f0e15 {
   cursor: pointer;
+
+  &:hover {
+    color: red;
+  }
 }
 
 @mixin icon vk, currentColor {

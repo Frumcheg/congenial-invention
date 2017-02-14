@@ -704,6 +704,8 @@ body {
 
 .icon.is-search {
   fill: #9A9A9A;
+  -webkit-transition: fill 300ms ease;
+  transition: fill 300ms ease;
 }
 
 .icon.is-search:hover {
@@ -714,6 +716,8 @@ body {
   fill: #FFFFFF;
   width: 70px;
   height: 70px;
+  -webkit-transition: fill 300ms ease;
+  transition: fill 300ms ease;
 }
 
 .icon.is-next2:hover {
@@ -724,6 +728,8 @@ body {
   fill: #000000;
   width: 70px;
   height: 70px;
+  -webkit-transition: fill 300ms ease;
+  transition: fill 300ms ease;
 }
 
 .icon.is-next2-black:hover {
@@ -733,6 +739,8 @@ body {
 .icon.is-time {
   fill: #7B7B7B;
   stroke: #7B7B7B;
+  -webkit-transition: fill 300ms ease;
+  transition: fill 300ms ease;
 }
 
 .icon.is-time:hover {
@@ -742,6 +750,12 @@ body {
 .icon.is-next {
   fill: #0f0e15;
   cursor: pointer;
+  -webkit-transition: fill 300ms ease;
+  transition: fill 300ms ease;
+}
+
+.icon.is-next:hover {
+  color: red;
 }
 
 .icon.is-next:hover {
@@ -752,6 +766,8 @@ body {
   fill: currentColor;
   width: 30px;
   height: 18px;
+  -webkit-transition: fill 300ms ease;
+  transition: fill 300ms ease;
 }
 
 .icon.is-vk:hover {
@@ -762,6 +778,8 @@ body {
   fill: currentColor;
   width: 23px;
   height: 23px;
+  -webkit-transition: fill 300ms ease;
+  transition: fill 300ms ease;
 }
 
 .icon.is-insta:hover {
@@ -772,6 +790,8 @@ body {
   fill: currentColor;
   width: 13px;
   height: 25px;
+  -webkit-transition: fill 300ms ease;
+  transition: fill 300ms ease;
 }
 
 .icon.is-facebook:hover {
@@ -782,6 +802,8 @@ body {
   fill: currentColor;
   width: 27px;
   height: 23px;
+  -webkit-transition: fill 300ms ease;
+  transition: fill 300ms ease;
 }
 
 .icon.is-twitter:hover {
@@ -792,6 +814,8 @@ body {
   fill: currentColor;
   width: 28px;
   height: 34px;
+  -webkit-transition: fill 300ms ease;
+  transition: fill 300ms ease;
 }
 
 .icon.is-lj:hover {
@@ -803,6 +827,8 @@ body {
   width: 19px;
   height: 18px;
   vertical-align: middle;
+  -webkit-transition: fill 300ms ease;
+  transition: fill 300ms ease;
 }
 
 .icon.is-download:hover {
@@ -814,6 +840,8 @@ body {
   width: 19px;
   height: 18px;
   vertical-align: middle;
+  -webkit-transition: fill 300ms ease;
+  transition: fill 300ms ease;
 }
 
 .icon.is-external:hover {
@@ -825,6 +853,8 @@ body {
   width: 19px;
   height: 18px;
   vertical-align: middle;
+  -webkit-transition: fill 300ms ease;
+  transition: fill 300ms ease;
 }
 
 .icon.is-return:hover {
@@ -1038,6 +1068,7 @@ body {
   font-family: 'AmericaXIX', serif;
   font-size: 20px;
   padding-bottom: 20px;
+  text-align: right;
 }
 
 .c-footer__org-name {
@@ -1054,6 +1085,7 @@ body {
 .c-footer__autors {
   color: #9a9a9a;
   margin-top: 34px;
+  text-align: right;
 }
 
 .c-footer__partners {
@@ -1325,12 +1357,10 @@ body {
 
 .c-show-card:hover .c-show-card__overlay:after {
   visibility: visible;
-  background-color: rgba(0, 0, 0, 0.79);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .c-show-card:hover .c-show-card__buttons {
-  -webkit-transform: scale(1);
-          transform: scale(1);
   opacity: 1;
 }
 
@@ -1418,8 +1448,8 @@ body {
   right: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0);
-  -webkit-transition: background-color 300ms ease;
-  transition: background-color 300ms ease;
+  -webkit-transition: background-color 300ms ease-in;
+  transition: background-color 300ms ease-in;
 }
 
 .c-show-card__buttons {
@@ -1429,18 +1459,18 @@ body {
   left: 0;
   right: 0;
   opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: opacity 300ms ease, -webkit-transform 300ms ease;
-  transition: opacity 300ms ease, -webkit-transform 300ms ease;
-  transition: opacity 300ms ease, transform 300ms ease;
-  transition: opacity 300ms ease, transform 300ms ease, -webkit-transform 300ms ease;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
   padding: 22px;
 }
 
 .c-show-card__button-more {
   padding-right: 26px;
   padding-left: 26px;
+}
+
+.c-show-card__button-buy {
+  padding-top: 13px;
 }
 
 .c-media__top {
@@ -2346,6 +2376,10 @@ body {
 .c-line-calendar__arrow {
   position: absolute;
   top: 9px;
+}
+
+.c-line-calendar__arrow:hover svg {
+  fill: #E74E0F !important;
 }
 
 .is-selected .c-line-calendar__day-item {

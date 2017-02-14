@@ -25,12 +25,11 @@
     .c-show-card__overlay {
       &:after {
         visibility: visible;
-        background-color: rgba(0, 0, 0, 0.79);
+        background-color: rgba(0, 0, 0, 0.5);
       }
     }
 
     .c-show-card__buttons {
-      transform: scale(1);
       opacity: 1;
     }
   }
@@ -123,7 +122,7 @@
     right: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0);
-    transition: background-color 300ms ease;
+    transition: background-color 300ms ease-in;
   }
 }
 
@@ -134,12 +133,15 @@
   left: 0;
   right: 0;
   opacity: 0;
-  transform: scale(0);
-  transition: opacity 300ms ease, transform 300ms ease;
+  transition: opacity 300ms ease-in;
   padding: 22px;
 }
 
 .c-show-card__button-more {
   padding-right: 26px;
   padding-left: 26px;
+}
+
+.c-show-card__button-buy {
+  padding-top: 13px;
 }

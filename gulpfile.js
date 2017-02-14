@@ -26,11 +26,11 @@ const cssConfig = [
 
 /* End PostCSS Stuff */
 
-const editor = openInEditor.configure({
-  editor: 'code'
-}, err => {
-  console.error(`Something went wrong: ${err}`);
-});
+// const editor = openInEditor.configure({
+//   editor: 'code'
+// }, err => {
+//   console.error(`Something went wrong: ${err}`);
+// });
 
 gulp.task('html', () =>
   gulp.src('src/html/[^_]*.html')
@@ -40,24 +40,24 @@ gulp.task('html', () =>
 
 gulp.task('serve', ['clean', 'styles', 'html'], () => {
 
-  browserSync.init({
-    server: {
-      baseDir: './dist/'
-    },
-    middleware: [
-      {
-        route: '/edit',
-        handle: (req, res, next) => {
-          editor.open('./src/css/main.css:1:1')
-            .then(() => {
-              console.log('Opened');
-            }, err => {
-              console.error(`Something went wrong: ${err}`);
-            });
-        }
-      }
-    ]
-  });
+  // browserSync.init({
+  //   server: {
+  //     baseDir: './dist/'
+  //   },
+  //   middleware: [
+  //     {
+  //       route: '/edit',
+  //       handle: (req, res, next) => {
+  //         editor.open('./src/css/main.css:1:1')
+  //           .then(() => {
+  //             console.log('Opened');
+  //           }, err => {
+  //             console.error(`Something went wrong: ${err}`);
+  //           });
+  //       }
+  //     }
+  //   ]
+  // });
 
   gulp.watch('src/css/**/*.css', ['styles']);
   gulp.watch('src/html/**/*.html', ['html']);

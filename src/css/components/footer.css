@@ -14,6 +14,7 @@
   font-family: 'AmericaXIX', serif;
   font-size: 20px;
   padding-bottom: 20px;
+  text-align: right;
 }
 
 .c-footer__org-name {
@@ -30,6 +31,7 @@
 .c-footer__autors {
   color: #9a9a9a;
   margin-top: 34px;
+  text-align: right;
 }
 
 .c-footer__partners {

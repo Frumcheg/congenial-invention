@@ -38,6 +38,12 @@
 .c-line-calendar__arrow {
   position: absolute;
   top: 9px;
+
+  &:hover {
+    svg {
+      fill: #E74E0F !important;
+    }
+  }
 }
 
 .is-selected {
