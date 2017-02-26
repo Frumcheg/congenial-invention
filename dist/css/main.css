@@ -462,6 +462,10 @@ template {
   display: none;
 }
 
+.slick-slide {
+  outline-width: 0;
+}
+
 @font-face {
   font-family: 'FiraSans';
   src: url("../fonts/FiraSans-Regular.eot");
@@ -755,10 +759,19 @@ body {
 }
 
 .icon.is-next:hover {
-  color: red;
+  fill: #0f0e15;
 }
 
-.icon.is-next:hover {
+.icon.is-prev {
+  fill: #0f0e15;
+  cursor: pointer;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: fill 300ms ease;
+  transition: fill 300ms ease;
+}
+
+.icon.is-prev:hover {
   fill: #0f0e15;
 }
 
@@ -1125,7 +1138,7 @@ body {
   width: 187px;
   margin: 45px auto 0;
   color: #0f0e15;
-  padding: 17px 0 11px;
+  padding: 11px 0 11px;
 }
 
 .c-counter {
@@ -1190,6 +1203,7 @@ body {
   bottom: 0;
   height: 70px;
   cursor: pointer;
+  z-index: 1;
 }
 
 .c-slider-arrow:hover svg {
@@ -1199,6 +1213,10 @@ body {
 .c-slider-arrow svg {
   -webkit-transition: fill 300ms ease;
   transition: fill 300ms ease;
+}
+
+.c-slider-dots_center {
+  text-align: center;
 }
 
 .c-slider-dots {
@@ -1364,6 +1382,18 @@ body {
   opacity: 1;
 }
 
+.c-show-card:hover .c-show-card__img {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+
+.c-show-card__img {
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
 .c-show-card__name {
   color: #0f0e15;
   font-size: 24px;
@@ -1485,6 +1515,10 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14);
 }
 
+.c-media__img {
+  overflow: hidden;
+}
+
 .c-media__img__el {
   display: block;
   width: 100%;
@@ -1516,9 +1550,9 @@ body {
 }
 
 .c-calendar__table {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-right: calc(1ch - 7.143%);
@@ -1593,6 +1627,47 @@ body {
   line-height: 1.5;
 }
 
+.c-calendar__slider {
+  font-size: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c-calendar__slider-item {
+  font-size: 16px;
+  white-space: normal;
+  display: inline-block;
+}
+
+.c-calendar__slider-items {
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+.is-show-first .c-calendar__slider-items {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.is-show-second .c-calendar__slider-items {
+  -webkit-transform: translateX(-356px);
+          transform: translateX(-356px);
+}
+
+.c-calendar__info {
+  position: relative;
+  max-width: 356px;
+}
+
+.c-calendar__info-counter {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
 .c-news {
   padding-bottom: 69px;
   position: relative;
@@ -1642,7 +1717,7 @@ body {
 
 .c-news__button-link {
   width: 187px;
-  padding: 15px 0 13px;
+  padding: 13px 0 13px;
   margin-top: 43px;
 }
 
@@ -1674,7 +1749,7 @@ body {
 
 .c-tour__link {
   width: 177px;
-  padding: 17px 0 11px;
+  padding: 11px 0 11px;
 }
 
 .c-troupe {
@@ -2200,6 +2275,16 @@ body {
   right: 0;
 }
 
+.c-filter_afisha {
+  overflow: hidden;
+}
+
+.c-filter_afisha .c-filter__title {
+  font-size: 24px;
+  float: left;
+  padding-bottom: 22px;
+}
+
 .c-filter input {
     display: none;
 }
@@ -2223,6 +2308,7 @@ body {
   top: 31px;
   -webkit-transform: rotate(90deg) scale(0.8);
           transform: rotate(90deg) scale(0.8);
+  font-size: 16px;
 }
 
 .c-filter__title label {
@@ -2397,6 +2483,7 @@ body {
 }
 
 .c-schedule {
+  padding-top: 15px;
   padding-bottom: 80px;
 }
 
@@ -2672,6 +2759,10 @@ body {
 .c-photo-previews__item img {
   max-width: 115px;
   max-height: 60px;
+}
+
+.c-photo-previews__item:focus {
+  outline: solid #e74e0f 3px;
 }
 
 .c-contacts__title {
@@ -3100,7 +3191,7 @@ body {
 }
 
 .с-many-items-slider__arrow {
-  top: -60px;
+  top: -160px;
 }
 
 .с-many-items-slider__arrow_left {
@@ -3379,4 +3470,28 @@ body {
   cursor: pointer;
 }
 
-/*# sourceMappingURL=main.css.map */
+.perf-schedule-sldr {
+  position: relative;
+  margin-top: 30px;
+  margin-left: -80px;
+  margin-right: -80px;
+}
+
+.perf-schedule-sldr-item__time {
+  padding-top: 7px;
+  padding-bottom: 11px;
+}
+
+.perf-schedule-sldr-item__day {
+  font-family: 'AmericaXIX', serif;
+}
+
+.perf-schedule-sldr-item {
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.perf-schedule-sldr-item__inner {
+  display: inline-block;
+  text-align: left;
+}

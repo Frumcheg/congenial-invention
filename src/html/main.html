@@ -181,84 +181,243 @@
       </div>
     </div>
     <div class="o-grid__cell">
-      <div class="c-calendar">
-        <div class="c-calendar__month">
-          В октябре
-          <svg class="icon is-next align-middle">
-            <use xlink:href="#next" />
-          </svg>
-        </div>
-        <div class="c-calendar__table">
-          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">26</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">27</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">28</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">29</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">30</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">1</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">2</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">3</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">4</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">5</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">6</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">7</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">8</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">9</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">10</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">11</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">12</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">13</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">14</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">15</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">16</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">17</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">18</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_active" data-text="Скидка 50%">19</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">20</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">21</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">22</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">23</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">24</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">25</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">26</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">27</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">28</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">29</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">30</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day">31</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">1</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">2</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">3</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">4</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">5</span></div>
-          <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">6</span></div>
-        </div>
-        <div class="c-calendar__info">
-          <div class="o-two-side">
-            <div class="o-time">
-              <svg class="icon is-time o-time__icon">
-                <use xlink:href="#time" />
-              </svg><span class="o-time__hour">17</span>:<span class="o-time__min">00</span>
-            </div>
-            <div class="c-counter o-two-side">
-              <div class="c-slider-arrow_left rotate-180">
-                <svg class="icon is-next">
+      <div class="c-calendar js-main-calendar is-show-first">
+        <div class="c-calendar__slider">
+          <div class="c-calendar__slider-items">
+            <div class="c-calendar__slider-item">
+              <div class="c-calendar__month">
+                <span class="c-calendar__month-name">В октябре</span>
+                <svg class="icon is-next align-middle js-main-calendar-trigger">
                   <use xlink:href="#next" />
                 </svg>
               </div>
-              <div><span class="c-show-card__current-number js-show-card-counter">1</span><span class="muted">/3</span></div>
-              <div class="c-slider-arrow_right">
-                <svg class="icon is-next">
-                  <use xlink:href="#next" />
-                </svg>
+              <div class="c-calendar__table">
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">26</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">27</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">28</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">29</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">30</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">1</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">2</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">3</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">4</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">5</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">6</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">7</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">8</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">9</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">10</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">11</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">12</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">13</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">14</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">15</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">16</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">17</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">18</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_active" data-text="Скидка 50%">19</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">20</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">21</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">22</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">23</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">24</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">25</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">26</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">27</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">28</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">29</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">30</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">31</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">1</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">2</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">3</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">4</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">5</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">6</span></div>
+              </div>
+              <div class="c-calendar__info">
+                <div class="c-counter o-two-side c-calendar__info-counter">
+                  <div class="c-slider-arrow_left rotate-180 js-calendar-info-slider-prev">
+                    <svg class="icon is-next">
+                      <use xlink:href="#next" />
+                    </svg>
+                  </div>
+                  <div><span class="c-show-card__current-number js-calendar-info-slider-counter">1</span><span class="muted">/3</span></div>
+                  <div class="c-slider-arrow_right js-calendar-info-slider-next">
+                    <svg class="icon is-next">
+                      <use xlink:href="#next" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="c-calendar-info-slider js-calendar-info-slider">
+                  <div class="c-calendar-info-slider__item">
+                    <div class="o-two-side">
+                      <div class="o-time">
+                        <svg class="icon is-time o-time__icon">
+                          <use xlink:href="#time" />
+                        </svg><span class="o-time__hour">17</span>:<span class="o-time__min">00</span>
+                      </div>
+                    </div>
+                    <div class="c-calendar__event">
+                      <a href="" class="e-link e-link_black">Большая советская энциклопедия</a>
+                    </div>
+                    <div class="c-calendar__event-desc">
+                      Драма в двух действиях (18+) <br>
+                      19 октября, Гранатовый зал
+                    </div>
+                  </div>
+                  <div class="c-calendar-info-slider__item">
+                    <div class="o-two-side">
+                      <div class="o-time">
+                        <svg class="icon is-time o-time__icon">
+                          <use xlink:href="#time" />
+                        </svg><span class="o-time__hour">17</span>:<span class="o-time__min">00</span>
+                      </div>
+                    </div>
+                    <div class="c-calendar__event">
+                      <a href="" class="e-link e-link_black">Большая советская энциклопедия</a>
+                    </div>
+                    <div class="c-calendar__event-desc">
+                      Драма в двух действиях (18+) <br>
+                      19 октября, Гранатовый зал
+                    </div>
+                  </div>
+                  <div class="c-calendar-info-slider__item">
+                    <div class="o-two-side">
+                      <div class="o-time">
+                        <svg class="icon is-time o-time__icon">
+                          <use xlink:href="#time" />
+                        </svg><span class="o-time__hour">17</span>:<span class="o-time__min">00</span>
+                      </div>
+                    </div>
+                    <div class="c-calendar__event">
+                      <a href="" class="e-link e-link_black">Большая советская энциклопедия</a>
+                    </div>
+                    <div class="c-calendar__event-desc">
+                      Драма в двух действиях (18+) <br>
+                      19 октября, Гранатовый зал
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="c-calendar__event">
-            <a href="" class="e-link e-link_black">Большая советская энциклопедия</a>
-          </div>
-          <div class="c-calendar__event-desc">
-            Драма в двух действиях (18+) <br>
-            19 октября, Гранатовый зал
+            <div class="c-calendar__slider-item">
+              <div class="c-calendar__month">
+                <svg class="icon is-prev align-middle js-main-calendar-trigger">
+                  <use xlink:href="#next" />
+                </svg>
+                <span class="c-calendar__month-name">В ноябре</span>
+              </div>
+              <div class="c-calendar__table">
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">31</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">1</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">2</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">3</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">4</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">5</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">6</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">7</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">8</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">9</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">10</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">11</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">12</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">13</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">14</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">15</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">16</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">17</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">18</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_active" data-text="Скидка 50%">19</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">20</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">21</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">22</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">23</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">24</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">25</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">26</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">27</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">28</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">29</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day">30</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">1</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">2</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">3</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">4</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">5</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">6</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">7</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">8</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">9</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">10</span></div>
+                <div class="c-calendar__cell"><span class="c-calendar__day c-calendar__day_inactive">11</span></div>
+              </div>
+              <div class="c-calendar__info">
+                <div class="c-counter o-two-side c-calendar__info-counter">
+                  <div class="c-slider-arrow_left rotate-180 js-calendar-info-slider-prev2">
+                    <svg class="icon is-next">
+                      <use xlink:href="#next" />
+                    </svg>
+                  </div>
+                  <div><span class="c-show-card__current-number js-calendar-info-slider-counter2">1</span><span class="muted">/3</span></div>
+                  <div class="c-slider-arrow_right js-calendar-info-slider-next2">
+                    <svg class="icon is-next">
+                      <use xlink:href="#next" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="c-calendar-info-slider js-calendar-info-slider2">
+                  <div class="c-calendar-info-slider__item">
+                    <div class="o-two-side">
+                      <div class="o-time">
+                        <svg class="icon is-time o-time__icon">
+                          <use xlink:href="#time" />
+                        </svg><span class="o-time__hour">17</span>:<span class="o-time__min">00</span>
+                      </div>
+                    </div>
+                    <div class="c-calendar__event">
+                      <a href="" class="e-link e-link_black">Большая советская энциклопедия</a>
+                    </div>
+                    <div class="c-calendar__event-desc">
+                      Драма в двух действиях (18+) <br>
+                      19 октября, Гранатовый зал
+                    </div>
+                  </div>
+                  <div class="c-calendar-info-slider__item">
+                    <div class="o-two-side">
+                      <div class="o-time">
+                        <svg class="icon is-time o-time__icon">
+                          <use xlink:href="#time" />
+                        </svg><span class="o-time__hour">17</span>:<span class="o-time__min">00</span>
+                      </div>
+                    </div>
+                    <div class="c-calendar__event">
+                      <a href="" class="e-link e-link_black">Большая советская энциклопедия</a>
+                    </div>
+                    <div class="c-calendar__event-desc">
+                      Драма в двух действиях (18+) <br>
+                      19 октября, Гранатовый зал
+                    </div>
+                  </div>
+                  <div class="c-calendar-info-slider__item">
+                    <div class="o-two-side">
+                      <div class="o-time">
+                        <svg class="icon is-time o-time__icon">
+                          <use xlink:href="#time" />
+                        </svg><span class="o-time__hour">17</span>:<span class="o-time__min">00</span>
+                      </div>
+                    </div>
+                    <div class="c-calendar__event">
+                      <a href="" class="e-link e-link_black">Большая советская энциклопедия</a>
+                    </div>
+                    <div class="c-calendar__event-desc">
+                      Драма в двух действиях (18+) <br>
+                      19 октября, Гранатовый зал
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

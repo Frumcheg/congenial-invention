@@ -40,24 +40,11 @@ gulp.task('html', () =>
 
 gulp.task('serve', ['clean', 'styles', 'html'], () => {
 
-  // browserSync.init({
-  //   server: {
-  //     baseDir: './dist/'
-  //   },
-  //   middleware: [
-  //     {
-  //       route: '/edit',
-  //       handle: (req, res, next) => {
-  //         editor.open('./src/css/main.css:1:1')
-  //           .then(() => {
-  //             console.log('Opened');
-  //           }, err => {
-  //             console.error(`Something went wrong: ${err}`);
-  //           });
-  //       }
-  //     }
-  //   ]
-  // });
+  browserSync.init({
+    server: {
+      baseDir: './dist/'
+    }
+  });
 
   gulp.watch('src/css/**/*.css', ['styles']);
   gulp.watch('src/html/**/*.html', ['html']);
@@ -66,12 +53,10 @@ gulp.task('serve', ['clean', 'styles', 'html'], () => {
 
 gulp.task('styles', () =>
     gulp.src('src/css/main.css')
-      .pipe(sourcemaps.init())
       .pipe(postcss(cssConfig))
       .pipe(rucksack({
         autoprefixer: true
       }))
-      .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest('dist/css'))
       .pipe(browserSync.stream())
 );
@@ -83,7 +68,7 @@ gulp.task('svg', () =>
     .pipe(gulp.dest('dist/img'))
 );
 
-gulp.task('reload', done => {
+gulp.task('reload', ['html'], done => {
   browserSync.reload();
   done();
 });

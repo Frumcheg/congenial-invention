@@ -26,10 +26,11 @@
 
 @mixin icon next, #0f0e15 {
   cursor: pointer;
+}
 
-  &:hover {
-    color: red;
-  }
+@mixin icon prev, #0f0e15 {
+  cursor: pointer;
+  transform: rotate(180deg);
 }
 
 @mixin icon vk, currentColor {

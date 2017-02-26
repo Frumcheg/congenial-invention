@@ -32,15 +32,28 @@
         });
       });
 
-      var counter = init('.js-show-card-counter', function($el) {
-        $el.setValue = function(value) {
-          $el.text(value);
-        }
+      init('.js-main-calendar', function($el) {
+        var triggers = $el.find('.js-main-calendar-trigger');
+        var firstMonth = 'is-show-first';
+        var secondMonth = 'is-show-second';
+
+        $(triggers).each(function(index, trigger) {
+          $(trigger).click(function() {
+            $el.toggleClass(firstMonth);
+            $el.toggleClass(secondMonth);
+          });
+        });
       });
 
       init('.js-show-card-slider', function($el) {
-        $el.on('beforeChange', function(slick, data) {
-          counter.setValue(data.currentSlide + 2);
+        var counter = init('.js-show-card-counter', function($el) {
+          $el.setValue = function(value) {
+            $el.text(value);
+          }
+        });
+
+        $el.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+          counter.setValue(nextSlide + 1);
         });
 
         $el.slick({
@@ -51,7 +64,49 @@
           respondTo: 'slider',
           draggable: false
         });
-      })
+      });
+
+      init('.js-calendar-info-slider', function($el) {
+        var counter = init('.js-calendar-info-slider-counter', function($el) {
+          $el.setValue = function(value) {
+            $el.text(value);
+          }
+        });
+
+        $el.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+          counter.setValue(nextSlide + 1);
+        });
+
+        $el.slick({
+          fade: true,
+          prevArrow: '.js-calendar-info-slider-prev',
+          nextArrow: '.js-calendar-info-slider-next',
+          swipe: false,
+          respondTo: 'slider',
+          draggable: false
+        });
+      });
+
+      init('.js-calendar-info-slider2', function($el) {
+        var counter = init('.js-calendar-info-slider-counter2', function($el) {
+          $el.setValue = function(value) {
+            $el.text(value);
+          }
+        });
+
+        $el.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+          counter.setValue(nextSlide + 1);
+        });
+
+        $el.slick({
+          fade: true,
+          prevArrow: '.js-calendar-info-slider-prev2',
+          nextArrow: '.js-calendar-info-slider-next2',
+          swipe: false,
+          respondTo: 'slider',
+          draggable: false
+        });
+      });
 
       init('.js-friend-slider', function($el) {
         $el.slick({
@@ -118,7 +173,9 @@
           slidesToScroll: 1,
           infinite: false,
           dots: true,
-          dotsClass: 'c-slider-dots'
+          dotsClass: 'c-slider-dots c-slider-dots_center',
+          prevArrow: '.js-arrow-prev-2',
+          nextArrow: '.js-arrow-next-2'
         });
       });
 
@@ -133,7 +190,7 @@
 
         init('.js-actor-slider-nav', function($el) {
           $el.find('[data-slide]').each(function(index, item) {
-            $(item).click(function(i) {
+            $(item).click(function(e, i) {
               $slider.slick('slickGoTo',  $(item).data('slide'));
             });
           });

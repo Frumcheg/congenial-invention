@@ -9,7 +9,7 @@
 }
 
 .c-calendar__table {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   margin-right: calc(1ch - 7.143%);
   margin-left: calc(1ch - 7.143%);
@@ -82,4 +82,44 @@
   color: #555555;
   margin-top: 6px;
   line-height: 1.5;
+}
+
+.c-calendar__slider {
+  font-size: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c-calendar__slider-item {
+  font-size: 16px;
+  white-space: normal;
+  display: inline-block;
+}
+
+.c-calendar__slider-items {
+  transition: transform 300ms ease;
+}
+
+.is-show-first {
+  .c-calendar__slider-items {
+    transform: translateX(0);
+  }
+}
+
+.is-show-second {
+  .c-calendar__slider-items {
+    transform: translateX(-356px);
+  }
+}
+
+.c-calendar__info {
+  position: relative;
+  max-width: 356px;
+}
+
+.c-calendar__info-counter {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }

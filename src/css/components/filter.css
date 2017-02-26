@@ -1,3 +1,12 @@
+.c-filter_afisha {
+  overflow: hidden;
+
+  .c-filter__title {
+    font-size: 24px;
+    float: left;
+    padding-bottom: 22px;
+  }
+}
 
 .c-filter input {
     display: none;
@@ -21,6 +30,7 @@
   right: 4px;
   top: 31px;
   transform: rotate(90deg) scale(0.8);
+  font-size: 16px;
 }
 
 .c-filter__title label {

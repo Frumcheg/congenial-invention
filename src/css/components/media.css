@@ -10,6 +10,10 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14);
 }
 
+.c-media__img {
+  overflow: hidden;
+}
+
 .c-media__img__el {
   display: block;
   width: 100%;

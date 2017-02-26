@@ -49,6 +49,7 @@
   bottom: 0;
   height: 70px;
   cursor: pointer;
+  z-index: 1;
 
   &:hover {
     svg {
@@ -59,6 +60,10 @@
   svg {
     transition: fill 300ms ease;
   }
+}
+
+.c-slider-dots_center {
+  text-align: center;
 }
 
 

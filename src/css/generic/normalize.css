@@ -460,3 +460,8 @@ template {
 [hidden] {
   display: none;
 }
+
+
+.slick-slide {
+  outline-width: 0;
+}

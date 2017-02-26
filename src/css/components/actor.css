@@ -143,4 +143,8 @@
     max-width: 115px;
     max-height: 60px;
   }
+
+  &:focus {
+    outline: solid #e74e0f 3px;
+  }
 }
